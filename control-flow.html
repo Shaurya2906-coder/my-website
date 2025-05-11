@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Control Flow</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #f0f0f0;
+            background: linear-gradient(to right, #000033, #1e3c72);
+            margin: 0;
+            padding: 0;
+        }
+        .content-section {
+            max-width: 850px;
+            margin: 40px auto;
+            padding: 25px;
+            background: rgba(0, 0, 0, 0.85);
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+        }
+        h1, h2 {
+            text-align: center;
+            color: #ffd700;
+            text-shadow: 2px 2px 6px #000;
+        }
+        h3 {
+            color: #ffd700;
+            margin-top: 25px;
+        }
+        pre {
+            background: #222;
+            color: #0f0;
+            padding: 14px;
+            border-radius: 6px;
+            overflow-x: auto;
+            font-size: 1rem;
+        }
+        .quiz-section {
+            margin-top: 30px;
+        }
+        .quiz-section h3 {
+            font-size: 1.3rem;
+            color: #ffd700;
+        }
+        .quiz-section p {
+            margin: 10px 0 5px 0;
+        }
+        .submit-btn {
+            display: block;
+            margin: 18px auto 0 auto;
+            padding: 12px 28px;
+            font-size: 1.2rem;
+            background-color: #ffd700;
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .submit-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 8px rgba(0,0,0,0.4);
+        }
+    </style>
+</head>
+<body>
+    <div class="content-section">
+        <h1>Python Control Flow</h1>
+        <h2>1. if-else Statements</h2>
+        <h3>✅ Purpose:</h3>
+        <p>Used for decision-making in Python. Executes blocks of code depending on conditions.</p>
+        <h3>🔷 Syntax:</h3>
+        <pre><code>if condition:
+    # code block
+elif another_condition:
+    # another block
+else:
+    # fallback block</code></pre>
+        <h3>🔷 Example:</h3>
+        <pre><code>age = 18
+if age >= 18:
+    print("Eligible to vote")
+else:
+    print("Not eligible")</code></pre>
+        <div class="quiz-section">
+            <h3>🧠 MCQs on if-else Statements</h3>
+            <form id="quiz-form-ifelse">
+                <p>1. What does if do in Python?</p>
+                <input type="radio" name="q1" value="A">A. Iteration<br>
+                <input type="radio" name="q1" value="B">B. Import a module<br>
+                <input type="radio" name="q1" value="C">C. Conditional check<br>
+                <input type="radio" name="q1" value="D">D. Define a function<br>
+                <p>2. What will this print?</p>
+                <pre><code>x = 5
+if x > 3:
+    print("Yes")</code></pre>
+                <input type="radio" name="q2" value="A">A. Yes<br>
+                <input type="radio" name="q2" value="B">B. No<br>
+                <input type="radio" name="q2" value="C">C. Error<br>
+                <input type="radio" name="q2" value="D">D. Nothing<br>
+                <p>3. Which of these is the correct syntax?</p>
+                <input type="radio" name="q3" value="A">A. if x > 5 then:<br>
+                <input type="radio" name="q3" value="B">B. if(x > 5):<br>
+                <input type="radio" name="q3" value="C">C. if x > 5:<br>
+                <input type="radio" name="q3" value="D">D. if x > 5 {<br>
+                <p>4. The else part is:</p>
+                <input type="radio" name="q4" value="A">A. Always required<br>
+                <input type="radio" name="q4" value="B">B. Optional<br>
+                <input type="radio" name="q4" value="C">C. Can appear before if<br>
+                <input type="radio" name="q4" value="D">D. Must have elif<br>
+                <p>5. What is printed?</p>
+                <pre><code>x = 3
+if x < 2:
+    print("A")
+elif x == 3:
+    print("B")
+else:
+    print("C")</code></pre>
+                <input type="radio" name="q5" value="A">A. A<br>
+                <input type="radio" name="q5" value="B">B. B<br>
+                <input type="radio" name="q5" value="C">C. C<br>
+                <input type="radio" name="q5" value="D">D. None<br>
+                <p>6. Which operator is used for “not equal to”?</p>
+                <input type="radio" name="q6" value="A">A. ==<br>
+                <input type="radio" name="q6" value="B">B. <><br>
+                <input type="radio" name="q6" value="C">C. !=<br>
+                <input type="radio" name="q6" value="D">D. ===<br>
+                <p>7. Can we have nested ifs in Python?</p>
+                <input type="radio" name="q7" value="A">A. No<br>
+                <input type="radio" name="q7" value="B">B. Only in loops<br>
+                <input type="radio" name="q7" value="C">C. Yes<br>
+                <input type="radio" name="q7" value="D">D. Only in functions<br>
+                <p>8. elif stands for:</p>
+                <input type="radio" name="q8" value="A">A. Else-if<br>
+                <input type="radio" name="q8" value="B">B. End if<br>
+                <input type="radio" name="q8" value="C">C. Error in if<br>
+                <input type="radio" name="q8" value="D">D. Else loop<br>
+                <p>9. What will this print?</p>
+                <pre><code>x = 10
+if x < 5:
+    print("Low")
+else:
+    print("High")</code></pre>
+                <input type="radio" name="q9" value="A">A. Low<br>
+                <input type="radio" name="q9" value="B">B. High<br>
+                <input type="radio" name="q9" value="C">C. Error<br>
+                <input type="radio" name="q9" value="D">D. Nothing<br>
+                <p>10. if-else is used for:</p>
+                <input type="radio" name="q10" value="A">A. Repetition<br>
+                <input type="radio" name="q10" value="B">B. Decision making<br>
+                <input type="radio" name="q10" value="C">C. Error handling<br>
+                <input type="radio" name="q10" value="D">D. File I/O<br>
+                <button type="submit" class="submit-btn">Submit Quiz</button>
+            </form>
+        </div>
+        <h2>2. Loops: for and while</h2>
+        <h3>✅ for Loop:</h3>
+        <p>Used to iterate over a sequence like a list, tuple, or string.</p>
+        <pre><code>for i in range(3):
+    print(i)</code></pre>
+        <h3>✅ while Loop:</h3>
+        <p>Repeats while a condition is True.</p>
+        <pre><code>i = 0
+while i < 3:
+    print(i)
+    i += 1</code></pre>
+        <div class="quiz-section">
+            <h3>🧠 MCQs on Loops</h3>
+            <form id="quiz-form-loops">
+                <p>1. What does a for loop do?</p>
+                <input type="radio" name="q1" value="A">A. Defines a function<br>
+                <input type="radio" name="q1" value="B">B. Makes decisions<br>
+                <input type="radio" name="q1" value="C">C. Repeats a block of code<br>
+                <input type="radio" name="q1" value="D">D. Converts data types<br>
+                <p>2. What is the output?</p>
+                <pre><code>for i in range(2):
+    print("Hi")</code></pre>
+                <input type="radio" name="q2" value="A">A. Hi<br>
+                <input type="radio" name="q2" value="B">B. Hi Hi<br>
+                <input type="radio" name="q2" value="C">C. 0 1<br>
+                <input type="radio" name="q2" value="D">D. Error<br>
+                <p>3. Which loop checks condition before execution?</p>
+                <input type="radio" name="q3" value="A">A. do-while<br>
+                <input type="radio" name="q3" value="B">B. for<br>
+                <input type="radio" name="q3" value="C">C. while<br>
+                <input type="radio" name="q3" value="D">D. if<br>
+                <p>4. Which function is used in for loops to generate a sequence of numbers?</p>
+                <input type="radio" name="q4" value="A">A. list()<br>
+                <input type="radio" name="q4" value="B">B. tuple()<br>
+                <input type="radio" name="q4" value="C">C. range()<br>
+                <input type="radio" name="q4" value="D">D. number()<br>
+                <p>5. When does a while loop stop?</p>
+                <input type="radio" name="q5" value="A">A. When the condition becomes False<br>
+                <input type="radio" name="q5" value="B">B. After 10 iterations<br>
+                <input type="radio" name="q5" value="C">C. When break is used<br>
+                <input type="radio" name="q5" value="D">D. Both A and C<br>
+                <p>6. What does range(1, 4) return?</p>
+                <input type="radio" name="q6" value="A">A. 1 2 3<br>
+                <input type="radio" name="q6" value="B">B. 1 2 3 4<br>
+                <input type="radio" name="q6" value="C">C. 0 1 2 3<br>
+                <input type="radio" name="q6" value="D">D. Error<br>
+                <p>7. Which loop is best for known number of iterations?</p>
+                <input type="radio" name="q7" value="A">A. while<br>
+                <input type="radio" name="q7" value="B">B. for<br>
+                <input type="radio" name="q7" value="C">C. if<br>
+                <input type="radio" name="q7" value="D">D. match<br>
+                <p>8. Infinite loop is caused when:</p>
+                <input type="radio" name="q8" value="A">A. Condition is always True<br>
+                <input type="radio" name="q8" value="B">B. Syntax is wrong<br>
+                <input type="radio" name="q8" value="C">C. Variable is undefined<br>
+                <input type="radio" name="q8" value="D">D. List is empty<br>
+                <p>9. What is the output?</p>
+                <pre><code>i = 0
+while i < 2:
+    print(i)
+    i += 1</code></pre>
+                <input type="radio" name="q9" value="A">A. 1 2<br>
+                <input type="radio" name="q9" value="B">B. 0 1<br>
+                <input type="radio" name="q9" value="C">C. 0 1 2<br>
+                <input type="radio" name="q9" value="D">D. Infinite loop<br>
+                <p>10. Which loop is not available in Python?</p>
+                <input type="radio" name="q10" value="A">A. for<br>
+                <input type="radio" name="q10" value="B">B. while<br>
+                <input type="radio" name="q10" value="C">C. do-while<br>
+                <input type="radio" name="q10" value="D">D. Nested for<br>
+                <button type="submit" class="submit-btn">Submit Quiz</button>
+            </form>
+        </div>
+        <h2>3. break and continue</h2>
+        <h3>✅ break:</h3>
+        <p>Used to exit a loop prematurely.</p>
+        <pre><code>for i in range(5):
+    if i == 3:
+        break
+    print(i)</code></pre>
+        <h3>✅ continue:</h3>
+        <p>Skips the current iteration and goes to the next.</p>
+        <pre><code>for i in range(5):
+    if i == 3:
+        continue
+    print(i)</code></pre>
+        <div class="quiz-section">
+            <h3>🧠 MCQs on break and continue</h3>
+            <form id="quiz-form-breakcont">
+                <p>1. What does break do in a loop?</p>
+                <input type="radio" name="q1" value="A">A. Skips current iteration<br>
+                <input type="radio" name="q1" value="B">B. Exits the loop<br>
+                <input type="radio" name="q1" value="C">C. Repeats loop<br>
+                <input type="radio" name="q1" value="D">D. Restarts loop<br>
+                <p>2. What is the output?</p>
+                <pre><code>for i in range(3):
+    break
+    print(i)</code></pre>
+                <input type="radio" name="q2" value="A">A. 0<br>
+                <input type="radio" name="q2" value="B">B. 0 1 2<br>
+                <input type="radio" name="q2" value="C">C. No output<br>
+                <input type="radio" name="q2" value="D">D. Error<br>
+                <p>3. What does continue do?</p>
+                <input type="radio" name="q3" value="A">A. Ends the program<br>
+                <input type="radio" name="q3" value="B">B. Skips the rest of the loop body<br>
+                <input type="radio" name="q3" value="C">C. Exits the loop<br>
+                <input type="radio" name="q3" value="D">D. Repeats the same iteration<br>
+                <p>4. Where can break be used?</p>
+                <input type="radio" name="q4" value="A">A. If statement<br>
+                <input type="radio" name="q4" value="B">B. Loop<br>
+                <input type="radio" name="q4" value="C">C. Function<br>
+                <input type="radio" name="q4" value="D">D. Class<br>
+                <p>5. What is printed?</p>
+                <pre><code>for i in range(4):
+    if i == 2:
+        continue
+    print(i)</code></pre>
+                <input type="radio" name="q5" value="A">A. 0 1<br>
+                <input type="radio" name="q5" value="B">B. 0 1 2 3<br>
+                <input type="radio" name="q5" value="C">C. 0 1 3<br>
+                <input type="radio" name="q5" value="D">D. 1 2 3<br>
+                <p>6. Can break be used in while loops?</p>
+                <input type="radio" name="q6" value="A">A. No<br>
+                <input type="radio" name="q6" value="B">B. Only in for loops<br>
+                <input type="radio" name="q6" value="C">C. Yes<br>
+                <input type="radio" name="q6" value="D">D. Only in functions<br>
+                <p>7. How many times will this loop run?</p>
+                <pre><code>i = 0
+while True:
+    print("Hi")
+    break</code></pre>
+                <input type="radio" name="q7" value="A">A. 0<br>
+                <input type="radio" name="q7" value="B">B. 1<br>
+                <input type="radio" name="q7" value="C">C. Infinite<br>
+                <input type="radio" name="q7" value="D">D. Error<br>
+                <p>8. When is continue useful?</p>
+                <input type="radio" name="q8" value="A">A. To exit loops<br>
+                <input type="radio" name="q8" value="B">B. To skip unwanted values<br>
+                <input type="radio" name="q8" value="C">C. To handle exceptions<br>
+                <input type="radio" name="q8" value="D">D. To define functions<br>
+                <p>9. What is the output?</p>
+                <pre><code>for i in range(5):
+    if i == 4:
+        break
+    print(i)</code></pre>
+                <input type="radio" name="q9" value="A">A. 0 1 2 3 4<br>
+                <input type="radio" name="q9" value="B">B. 0 1 2 3<br>
+                <input type="radio" name="q9" value="C">C. 0 1 2<br>
+                <input type="radio" name="q9" value="D">D. 1 2 3 4<br>
+                <p>10. Will continue affect the loop counter?</p>
+                <input type="radio" name="q10" value="A">A. Yes<br>
+                <input type="radio" name="q10" value="B">B. No<br>
+                <input type="radio" name="q10" value="C">C. Causes error<br>
+                <input type="radio" name="q10" value="D">D. Restarts loop<br>
+                <button type="submit" class="submit-btn">Submit Quiz</button>
+            </form>
+        </div>
+        <h2>4. match Statements (Python 3.10+)</h2>
+        <h3>✅ Purpose:</h3>
+        <p><code>match</code> is similar to switch-case in other languages, used to compare patterns.</p>
+        <h3>🔷 Syntax:</h3>
+        <pre><code>value = 2
+match value:
+    case 1:
+        print("One")
+    case 2:
+        print("Two")
+    case _:
+        print("Default")</code></pre>
+        <div class="quiz-section">
+            <h3>🧠 MCQs on match Statements</h3>
+            <form id="quiz-form-match">
+                <p>1. Which version of Python introduced match?</p>
+                <input type="radio" name="q1" value="A">A. 3.6<br>
+                <input type="radio" name="q1" value="B">B. 3.8<br>
+                <input type="radio" name="q1" value="C">C. 3.10<br>
+                <input type="radio" name="q1" value="D">D. 3.9<br>
+                <p>2. What does _ mean in match?</p>
+                <input type="radio" name="q2" value="A">A. Multiply<br>
+                <input type="radio" name="q2" value="B">B. Invalid<br>
+                <input type="radio" name="q2" value="C">C. Default case<br>
+                <input type="radio" name="q2" value="D">D. Skip<br>
+                <p>3. What will be printed?</p>
+                <pre><code>x = 1
+match x:
+    case 0:
+        print("Zero")
+    case 1:
+        print("One")</code></pre>
+                <input type="radio" name="q3" value="A">A. Zero<br>
+                <input type="radio" name="q3" value="B">B. One<br>
+                <input type="radio" name="q3" value="C">C. Nothing<br>
+                <input type="radio" name="q3" value="D">D. Error<br>
+                <p>4. match-case is most similar to which C/C++ structure?</p>
+                <input type="radio" name="q4" value="A">A. if<br>
+                <input type="radio" name="q4" value="B">B. for<br>
+                <input type="radio" name="q4" value="C">C. switch<br>
+                <input type="radio" name="q4" value="D">D. class<br>
+                <p>5. Which keyword starts a pattern match block?</p>
+                <input type="radio" name="q5" value="A">A. switch<br>
+                <input type="radio" name="q5" value="B">B. case<br>
+                <input type="radio" name="q5" value="C">C. match<br>
+                <input type="radio" name="q5" value="D">D. elif<br>
+                <p>6. Can match handle strings?</p>
+                <input type="radio" name="q6" value="A">A. Yes<br>
+                <input type="radio" name="q6" value="B">B. No<br>
+                <input type="radio" name="q6" value="C">C. Only integers<br>
+                <input type="radio" name="q6" value="D">D. Only lists<br>
+                <p>7. What happens if no case matches and _ is not used?</p>
+                <input type="radio" name="q7" value="A">A. Error<br>
+                <input type="radio" name="q7" value="B">B. Program stops<br>
+                <input type="radio" name="q7" value="C">C. Nothing is printed<br>
+                <input type="radio" name="q7" value="D">D. All cases are checked again<br>
+                <p>8. Which is a valid match pattern?</p>
+                <input type="radio" name="q8" value="A">A. match 5:<br>
+                <input type="radio" name="q8" value="B">B. case "hello":<br>
+                <input type="radio" name="q8" value="C">C. case 5:<br>
+                <input type="radio" name="q8" value="D">D. All of the above<br>
+                <p>9. Can match be used with conditions (guards)?</p>
+                <input type="radio" name="q9" value="A">A. No<br>
+                <input type="radio" name="q9" value="B">B. Yes<br>
+                <input type="radio" name="q9" value="C">C. Only with if<br>
+                <input type="radio" name="q9" value="D">D. Only with integers<br>
+                <p>10. match-case helps in:</p>
+                <input type="radio" name="q10" value="A">A. Defining loops<br>
+                <input type="radio" name="q10" value="B">B. Pattern matching<br>
+                <input type="radio" name="q10" value="C">C. Creating lists<br>
+                <input type="radio" name="q10" value="D">D. File handling<br>
+                <button type="submit" class="submit-btn">Submit Quiz</button>
+            </form>
+        </div>
+    </div>
+    <script>
+    // Quiz answer keys for each quiz form
+    const quizKeys = {
+        'quiz-form-ifelse': ['C','A','C','B','B','C','C','A','B','B'],
+        'quiz-form-loops': ['C','B','C','C','D','A','B','A','B','C'],
+        'quiz-form-breakcont': ['B','C','B','B','C','C','B','B','B','A'],
+        'quiz-form-match': ['C','C','B','C','C','A','C','D','B','B']
+    };
+    document.addEventListener('DOMContentLoaded', function() {
+        document.querySelectorAll('form').forEach(function(form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const formId = form.id;
+                const answers = quizKeys[formId];
+                if (!answers) return;
+                let score = 0;
+                for (let i = 0; i < 10; i++) {
+                    let qName = `q${i+1}`;
+                    const selected = form.querySelector(`input[name='${qName}']:checked`);
+                    if (selected && selected.value === answers[i]) {
+                        score++;
+                    }
+                }
+                let resultDiv = form.querySelector('.quiz-result');
+                if (!resultDiv) {
+                    resultDiv = document.createElement('div');
+                    resultDiv.className = 'quiz-result';
+                    resultDiv.style.textAlign = 'center';
+                    resultDiv.style.fontWeight = 'bold';
+                    resultDiv.style.fontSize = '1.2rem';
+                    resultDiv.style.marginTop = '12px';
+                    form.appendChild(resultDiv);
+                }
+                resultDiv.textContent = `You scored ${score} out of 10!`;
+                resultDiv.style.display = 'block';
+            });
+        });
+    });
+    </script>
+</body>
+</html>

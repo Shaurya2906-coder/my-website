@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Python Numbers and Strings</title>
+    <style>
+        /* Updated styles for a more professional look */
+        body {
+            font-family: 'Arial', sans-serif;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #f0f0f0;
+            background: linear-gradient(to right, #1e3c72, #2a5298); /* Cool gradient background */
+            margin: 0;
+            padding: 0;
+        }
+
+        .content-section {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .content-section h1 {
+            font-size: 2.5rem;
+            text-align: center;
+            color: #ffd700;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+
+        .content-section h2 {
+            font-size: 1.8rem;
+            color: #ffd700;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .content-section p {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+        }
+
+        .content-section pre {
+            background: #222;
+            color: #0f0;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            font-size: 1rem;
+        }
+
+        .quiz-section {
+            margin-top: 30px;
+        }
+
+        .quiz-section h3 {
+            font-size: 1.5rem;
+            color: #ffd700;
+            margin-bottom: 10px;
+        }
+
+        .quiz-section p {
+            margin: 10px 0;
+            font-size: 1.1rem;
+        }
+
+        .submit-btn {
+            display: block;
+            margin: 20px auto;
+            padding: 15px 30px;
+            font-size: 1.5rem;
+            background-color: #ffd700;
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .submit-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+        }
+    </style>
+    <style>
+        body {
+            background-color: #000033; /* Deep dark blue background */
+            color: #f0f0f0;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="content-section">
+        <h1>Explore Python Numbers and Strings</h1>
+        <p>Welcome to the Data Types section. Here, you will learn about Python's Numbers and Strings in detail.</p>
+
+        <h2>1. Python Numbers</h2>
+        <p>Python supports different types of numeric data:</p>
+
+        <h3>✅ Types of Numbers</h3>
+        <ul>
+            <li><code>int</code> – Integer numbers (e.g. 5, -10, 200)</li>
+            <li><code>float</code> – Decimal numbers (e.g. 3.14, -0.5, 2.0)</li>
+            <li><code>complex</code> – Complex numbers (e.g. 2 + 3j)</li>
+        </ul>
+
+        <h3>🔹 Example:</h3>
+        <pre><code>a = 10        # int
+b = 3.5       # float
+c = 2 + 3j    # complex</code></pre>
+
+        <h3>✅ Basic Operations</h3>
+        <pre><code>print(5 + 3)    # Addition
+print(5 - 3)    # Subtraction
+print(5 * 3)    # Multiplication
+print(5 / 2)    # Division (float)
+print(5 // 2)   # Floor division
+print(5 % 2)    # Modulus
+print(2 ** 3)   # Exponentiation</code></pre>
+
+        <h2>2. Python Strings</h2>
+        <p>A string is a sequence of characters enclosed in quotes: ' ', " ", ''' ''', or """ """.</p>
+
+        <pre><code>name = "Shaurya"</code></pre>
+
+        <h3>✅ String Operations:</h3>
+        <pre><code>s = "Hello"
+print(len(s))         # Length of the string
+print(s.upper())      # HELLO
+print(s.lower())      # hello
+print(s[0])           # H (Indexing)
+print(s[1:4])         # ell (Slicing)</code></pre>
+
+        <h3>✅ String Concatenation and Repetition</h3>
+        <pre><code>print("Hello" + " World")   # Concatenation
+print("Hi" * 3)             # Repetition</code></pre>
+
+        <h3>✅ f-strings (String Formatting)</h3>
+        <pre><code>name = "Shaurya"
+age = 18
+print(f"My name is {name} and I am {age} years old.")</code></pre>
+
+        <h3>🚫 Important Note</h3>
+        <p>Strings are immutable: You cannot change a character in a string like <code>s[0] = 'X'</code>.</p>
+
+        <div class="quiz-section">
+            <h3>🧠 Quiz Time</h3>
+            <form id="quiz-form">
+                <p>1. What is the result of 5 // 2 in Python?</p>
+                <input type="radio" id="q1a" name="q1" value="A">
+                <label for="q1a">A. 2.5</label><br>
+                <input type="radio" id="q1b" name="q1" value="B">
+                <label for="q1b">B. 3</label><br>
+                <input type="radio" id="q1c" name="q1" value="C">
+                <label for="q1c">C. 2</label><br>
+                <input type="radio" id="q1d" name="q1" value="D">
+                <label for="q1d">D. 2.0</label><br>
+
+                <p>2. Which of the following is a float?</p>
+                <input type="radio" id="q2a" name="q2" value="A">
+                <label for="q2a">A. 3</label><br>
+                <input type="radio" id="q2b" name="q2" value="B">
+                <label for="q2b">B. 3.0</label><br>
+                <input type="radio" id="q2c" name="q2" value="C">
+                <label for="q2c">C. "3.0"</label><br>
+                <input type="radio" id="q2d" name="q2" value="D">
+                <label for="q2d">D. '3'</label><br>
+
+                <p>3. What will "Python" * 2 output?</p>
+                <input type="radio" id="q3a" name="q3" value="A">
+                <label for="q3a">A. PythonPython</label><br>
+                <input type="radio" id="q3b" name="q3" value="B">
+                <label for="q3b">B. Python2</label><br>
+                <input type="radio" id="q3c" name="q3" value="C">
+                <label for="q3c">C. Error</label><br>
+                <input type="radio" id="q3d" name="q3" value="D">
+                <label for="q3d">D. Python Python</label><br>
+
+                <p>4. What is the output of "abc"[1]?</p>
+                <input type="radio" id="q4a" name="q4" value="A">
+                <label for="q4a">A. a</label><br>
+                <input type="radio" id="q4b" name="q4" value="B">
+                <label for="q4b">B. b</label><br>
+                <input type="radio" id="q4c" name="q4" value="C">
+                <label for="q4c">C. c</label><br>
+                <input type="radio" id="q4d" name="q4" value="D">
+                <label for="q4d">D. Error</label><br>
+
+                <p>5. What does len("hello") return?</p>
+                <input type="radio" id="q5a" name="q5" value="A">
+                <label for="q5a">A. 4</label><br>
+                <input type="radio" id="q5b" name="q5" value="B">
+                <label for="q5b">B. 5</label><br>
+                <input type="radio" id="q5c" name="q5" value="C">
+                <label for="q5c">C. 6</label><br>
+                <input type="radio" id="q5d" name="q5" value="D">
+                <label for="q5d">D. Error</label><br>
+
+                <p>6. Which of the following creates a string in Python?</p>
+                <input type="radio" id="q6a" name="q6" value="A">
+                <label for="q6a">A. str = 123</label><br>
+                <input type="radio" id="q6b" name="q6" value="B">
+                <label for="q6b">B. str = "123"</label><br>
+                <input type="radio" id="q6c" name="q6" value="C">
+                <label for="q6c">C. str = 1.23</label><br>
+                <input type="radio" id="q6d" name="q6" value="D">
+                <label for="q6d">D. str = 'abc' + 123</label><br>
+
+                <p>7. What will be the result of "3" + "4" in Python?</p>
+                <input type="radio" id="q7a" name="q7" value="A">
+                <label for="q7a">A. 7</label><br>
+                <input type="radio" id="q7b" name="q7" value="B">
+                <label for="q7b">B. 34</label><br>
+                <input type="radio" id="q7c" name="q7" value="C">
+                <label for="q7c">C. 3+4</label><br>
+                <input type="radio" id="q7d" name="q7" value="D">
+                <label for="q7d">D. Error</label><br>
+
+                <p>8. Which operator is used for exponentiation in Python?</p>
+                <input type="radio" id="q8a" name="q8" value="A">
+                <label for="q8a">A. ^</label><br>
+                <input type="radio" id="q8b" name="q8" value="B">
+                <label for="q8b">B. *</label><br>
+                <input type="radio" id="q8c" name="q8" value="C">
+                <label for="q8c">C. **</label><br>
+                <input type="radio" id="q8d" name="q8" value="D">
+                <label for="q8d">D. %</label><br>
+
+                <p>9. What type of number is 2 + 3j in Python?</p>
+                <input type="radio" id="q9a" name="q9" value="A">
+                <label for="q9a">A. Integer</label><br>
+                <input type="radio" id="q9b" name="q9" value="B">
+                <label for="q9b">B. Float</label><br>
+                <input type="radio" id="q9c" name="q9" value="C">
+                <label for="q9c">C. Complex</label><br>
+                <input type="radio" id="q9d" name="q9" value="D">
+                <label for="q9d">D. String</label><br>
+
+                <p>10. What does s = "Python"; s[0] = "J" do?</p>
+                <input type="radio" id="q10a" name="q10" value="A">
+                <label for="q10a">A. Changes first character to J</label><br>
+                <input type="radio" id="q10b" name="q10" value="B">
+                <label for="q10b">B. Returns "Jython"</label><br>
+                <input type="radio" id="q10c" name="q10" value="C">
+                <label for="q10c">C. Gives an error</label><br>
+                <input type="radio" id="q10d" name="q10" value="D">
+                <label for="q10d">D. Nothing</label><br>
+
+                <button type="submit" class="submit-btn">Submit Quiz</button>
+            </form>
+        </div>        <h2>Lists and Tuples</h2>
+
+        <h3>✅ What is a List?</h3>
+        <p>A list in Python is an ordered, mutable collection of elements. Lists can contain elements of different data types like integers, strings, floats, etc.</p>
+
+        <h4>📌 Syntax:</h4>
+        <pre><code>my_list = [10, "apple", 3.14, True]</code></pre>
+
+        <h4>📌 Common List Operations:</h4>
+        <pre><code>my_list.append("banana")     # Add item to end
+my_list[0] = 20              # Modify item
+del my_list[1]               # Delete item
+print(len(my_list))          # Length of list
+print(my_list[0])            # Access by index</code></pre>
+
+        <h4>📌 Useful List Methods:</h4>
+        <ul>
+            <li><code>append()</code>: Adds an item at the end.</li>
+            <li><code>insert(index, item)</code>: Adds item at a specific index.</li>
+            <li><code>remove(item)</code>: Removes the first occurrence.</li>
+            <li><code>sort()</code>, <code>reverse()</code>: Sorts or reverses the list.</li>
+            <li><code>pop()</code>: Removes and returns the last item.</li>
+        </ul>
+
+        <h3>✅ What is a Tuple?</h3>
+        <p>A tuple is also an ordered collection of elements, but it is immutable (you can't modify it after creation).</p>
+
+        <h4>📌 Syntax:</h4>
+        <pre><code>my_tuple = (1, "banana", 4.5)</code></pre>
+
+        <h4>📌 Tuple with One Element:</h4>
+        <pre><code>t = (5,)  # Must include comma to make it a tuple</code></pre>
+
+        <h4>📌 Accessing Tuple Elements:</h4>
+        <pre><code>print(my_tuple[1])  # Access like a list</code></pre>
+
+        <h3>🔁 List vs Tuple Comparison</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Feature</th>
+                    <th>List ([])</th>
+                    <th>Tuple (())</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mutable</td>
+                    <td>Yes</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td>Performance</td>
+                    <td>Slower</td>
+                    <td>Faster</td>
+                </tr>
+                <tr>
+                    <td>Syntax</td>
+                    <td>[ ]</td>
+                    <td>( )</td>
+                </tr>
+                <tr>
+                    <td>Use Case</td>
+                    <td>Changing data</td>
+                    <td>Fixed, constant data</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="quiz-section">
+            <h3>🧠 10 MCQs on Lists and Tuples</h3>
+            <form id="quiz-form-lists-tuples">
+                <p>1. Which of the following is a list in Python?</p>
+                <input type="radio" id="q1a" name="q1" value="A">
+                <label for="q1a">A. (1, 2, 3)</label><br>
+                <input type="radio" id="q1b" name="q1" value="B">
+                <label for="q1b">B. [1, 2, 3]</label><br>
+                <input type="radio" id="q1c" name="q1" value="C">
+                <label for="q1c">C. {1, 2, 3}</label><br>
+                <input type="radio" id="q1d" name="q1" value="D">
+                <label for="q1d">D. &lt;1, 2, 3&gt;</label><br>
+
+                <p>2. Which of the following is a tuple with one element?</p>
+                <input type="radio" id="q2a" name="q2" value="A">
+                <label for="q2a">A. (5)</label><br>
+                <input type="radio" id="q2b" name="q2" value="B">
+                <label for="q2b">B. (5,)</label><br>
+                <input type="radio" id="q2c" name="q2" value="C">
+                <label for="q2c">C. [5]</label><br>
+                <input type="radio" id="q2d" name="q2" value="D">
+                <label for="q2d">D. {5}</label><br>
+
+                <p>3. Which of the following can be modified after creation?</p>
+                <input type="radio" id="q3a" name="q3" value="A">
+                <label for="q3a">A. Tuple</label><br>
+                <input type="radio" id="q3b" name="q3" value="B">
+                <label for="q3b">B. List</label><br>
+                <input type="radio" id="q3c" name="q3" value="C">
+                <label for="q3c">C. Both</label><br>
+                <input type="radio" id="q3d" name="q3" value="D">
+                <label for="q3d">D. Neither</label><br>
+
+                <p>4. What is the result of len((1, 2, 3))?</p>
+                <input type="radio" id="q4a" name="q4" value="A">
+                <label for="q4a">A. 2</label><br>
+                <input type="radio" id="q4b" name="q4" value="B">
+                <label for="q4b">B. 3</label><br>
+                <input type="radio" id="q4c" name="q4" value="C">
+                <label for="q4c">C. 1</label><br>
+                <input type="radio" id="q4d" name="q4" value="D">
+                <label for="q4d">D. Error</label><br>
+
+                <p>5. Which method is used to add an element to the end of a list?</p>
+                <input type="radio" id="q5a" name="q5" value="A">
+                <label for="q5a">A. insert()</label><br>
+                <input type="radio" id="q5b" name="q5" value="B">
+                <label for="q5b">B. add()</label><br>
+                <input type="radio" id="q5c" name="q5" value="C">
+                <label for="q5c">C. append()</label><br>
+                <input type="radio" id="q5d" name="q5" value="D">
+                <label for="q5d">D. extend()</label><br>
+
+                <p>6. What is the output of the following code?</p>
+                <pre><code>x = [1, 2, 3]
+print(x[1])</code></pre>
+                <input type="radio" id="q6a" name="q6" value="A">
+                <label for="q6a">A. 1</label><br>
+                <input type="radio" id="q6b" name="q6" value="B">
+                <label for="q6b">B. 2</label><br>
+                <input type="radio" id="q6c" name="q6" value="C">
+                <label for="q6c">C. 3</label><br>
+                <input type="radio" id="q6d" name="q6" value="D">
+                <label for="q6d">D. Error</label><br>
+
+                <p>7. Which of these will give an error?</p>
+                <pre><code>t = (1, 2, 3)
+t[0] = 10</code></pre>
+                <input type="radio" id="q7a" name="q7" value="A">
+                <label for="q7a">A. Changes value</label><br>
+                <input type="radio" id="q7b" name="q7" value="B">
+                <label for="q7b">B. Gives warning</label><br>
+                <input type="radio" id="q7c" name="q7" value="C">
+                <label for="q7c">C. Gives error</label><br>
+                <input type="radio" id="q7d" name="q7" value="D">
+                <label for="q7d">D. No output</label><br>
+
+                <p>8. Which data structure is better when data should not change?</p>
+                <input type="radio" id="q8a" name="q8" value="A">
+                <label for="q8a">A. List</label><br>
+                <input type="radio" id="q8b" name="q8" value="B">
+                <label for="q8b">B. Tuple</label><br>
+                <input type="radio" id="q8c" name="q8" value="C">
+                <label for="q8c">C. Dictionary</label><br>
+                <input type="radio" id="q8d" name="q8" value="D">
+                <label for="q8d">D. Set</label><br>
+
+                <p>9. What is the result of ["a", "b"] + ["c"]?</p>
+                <input type="radio" id="q9a" name="q9" value="A">
+                <label for="q9a">A. Error</label><br>
+                <input type="radio" id="q9b" name="q9" value="B">
+                <label for="q9b">B. ["abc"]</label><br>
+                <input type="radio" id="q9c" name="q9" value="C">
+                <label for="q9c">C. ["a", "b", "c"]</label><br>
+                <input type="radio" id="q9d" name="q9" value="D">
+                <label for="q9d">D. ["a", "b"]["c"]</label><br>
+
+                <p>10. What is the output of the following?</p>
+                <pre><code>my_list = [3, 1, 2]
+my_list.sort()
+print(my_list)</code></pre>
+                <input type="radio" id="q10a" name="q10" value="A">
+                <label for="q10a">A. [3, 1, 2]</label><br>
+                <input type="radio" id="q10b" name="q10" value="B">
+                <label for="q10b">B. [1, 2, 3]</label><br>
+                <input type="radio" id="q10c" name="q10" value="C">
+                <label for="q10c">C. [2, 1, 3]</label><br>
+                <input type="radio" id="q10d" name="q10" value="D">
+                <label for="q10d">D. Error</label><br>                <button type="submit" class="submit-btn">Submit Quiz</button>
+            </form>
+        </div>
+
+        <h2 style="text-align: center;">Dictionaries and Sets</h2>
+
+        <h3>🔷 1. Dictionaries in Python</h3>
+        <p>A dictionary is an unordered, mutable collection of key-value pairs. Each key must be unique and immutable (like strings or numbers), but values can be any type.</p>
+
+        <h4>✅ Syntax:</h4>
+        <pre><code>student = {
+    "name": "Shaurya",
+    "age": 18,
+    "grade": "A"
+}</code></pre>
+
+        <h4>✅ Accessing Elements:</h4>
+        <pre><code>print(student["name"])        # Output: Shaurya</code></pre>
+
+        <h4>✅ Common Methods:</h4>
+        <ul>
+            <li><code>get(key)</code>: Returns value or None</li>
+            <li><code>keys()</code>: Returns all keys</li>
+            <li><code>values()</code>: Returns all values</li>
+            <li><code>items()</code>: Returns key-value pairs</li>
+            <li><code>update()</code>: Updates dictionary</li>
+            <li><code>pop(key)</code>: Removes item by key</li>
+        </ul>
+
+        <h4>✅ Example:</h4>
+        <pre><code>student["age"] = 19
+student["city"] = "Delhi"</code></pre>
+
+        <h3>🟢 2. Sets in Python</h3>
+        <p>A set is an unordered, mutable, and unindexed collection of unique elements.</p>
+
+        <h4>✅ Syntax:</h4>
+        <pre><code>fruits = {"apple", "banana", "cherry"}</code></pre>
+
+        <h4>✅ Key Features:</h4>
+        <ul>
+            <li>No duplicate values</li>
+            <li>No indexing</li>
+            <li>Fast membership testing (<code>in</code>)</li>
+        </ul>
+
+        <h4>✅ Common Set Operations:</h4>
+        <pre><code>fruits.add("orange")         # Add element
+fruits.remove("banana")      # Remove element
+"apple" in fruits            # Membership test</code></pre>
+
+        <h4>✅ Set Operations:</h4>
+        <pre><code>A = {1, 2, 3}
+B = {3, 4, 5}
+
+print(A | B)  # Union → {1, 2, 3, 4, 5}
+print(A & B)  # Intersection → {3}
+print(A - B)  # Difference → {1, 2}</code></pre>
+
+        <div class="quiz-section">
+            <h3>🧠 10 MCQs on Dictionaries and Sets</h3>
+            <form id="quiz-form-dict-set">
+                <p>1. What is the correct way to define a dictionary?</p>
+                <input type="radio" id="q1a-ds" name="q1-ds" value="A">
+                <label for="q1a-ds">A. {"apple", "banana", "cherry"}</label><br>
+                <input type="radio" id="q1b-ds" name="q1-ds" value="B">
+                <label for="q1b-ds">B. ["name": "John", "age": 25]</label><br>
+                <input type="radio" id="q1c-ds" name="q1-ds" value="C">
+                <label for="q1c-ds">C. {"name": "John", "age": 25}</label><br>
+                <input type="radio" id="q1d-ds" name="q1-ds" value="D">
+                <label for="q1d-ds">D. ("name": "John", "age": 25)</label><br>
+
+                <p>2. Which data structure does not allow duplicate values?</p>
+                <input type="radio" id="q2a-ds" name="q2-ds" value="A">
+                <label for="q2a-ds">A. List</label><br>
+                <input type="radio" id="q2b-ds" name="q2-ds" value="B">
+                <label for="q2b-ds">B. Dictionary</label><br>
+                <input type="radio" id="q2c-ds" name="q2-ds" value="C">
+                <label for="q2c-ds">C. Set</label><br>
+                <input type="radio" id="q2d-ds" name="q2-ds" value="D">
+                <label for="q2d-ds">D. Tuple</label><br>
+
+                <p>3. What will my_dict.get("key") return if the key does not exist?</p>
+                <input type="radio" id="q3a-ds" name="q3-ds" value="A">
+                <label for="q3a-ds">A. 0</label><br>
+                <input type="radio" id="q3b-ds" name="q3-ds" value="B">
+                <label for="q3b-ds">B. Error</label><br>
+                <input type="radio" id="q3c-ds" name="q3-ds" value="C">
+                <label for="q3c-ds">C. None</label><br>
+                <input type="radio" id="q3d-ds" name="q3-ds" value="D">
+                <label for="q3d-ds">D. False</label><br>
+
+                <p>4. What is the output of this code?</p>
+                <pre><code>d = {"a": 1, "b": 2}
+print(d["b"])</code></pre>
+                <input type="radio" id="q4a-ds" name="q4-ds" value="A">
+                <label for="q4a-ds">A. a</label><br>
+                <input type="radio" id="q4b-ds" name="q4-ds" value="B">
+                <label for="q4b-ds">B. b</label><br>
+                <input type="radio" id="q4c-ds" name="q4-ds" value="C">
+                <label for="q4c-ds">C. 1</label><br>
+                <input type="radio" id="q4d-ds" name="q4-ds" value="D">
+                <label for="q4d-ds">D. 2</label><br>
+
+                <p>5. What will this return?</p>
+                <pre><code>my_set = {1, 2, 3}
+my_set.add(2)
+print(len(my_set))</code></pre>
+                <input type="radio" id="q5a-ds" name="q5-ds" value="A">
+                <label for="q5a-ds">A. 3</label><br>
+                <input type="radio" id="q5b-ds" name="q5-ds" value="B">
+                <label for="q5b-ds">B. 4</label><br>
+                <input type="radio" id="q5c-ds" name="q5-ds" value="C">
+                <label for="q5c-ds">C. 2</label><br>
+                <input type="radio" id="q5d-ds" name="q5-ds" value="D">
+                <label for="q5d-ds">D. Error</label><br>
+
+                <p>6. Which method is used to return all keys in a dictionary?</p>
+                <input type="radio" id="q6a-ds" name="q6-ds" value="A">
+                <label for="q6a-ds">A. keys()</label><br>
+                <input type="radio" id="q6b-ds" name="q6-ds" value="B">
+                <label for="q6b-ds">B. values()</label><br>
+                <input type="radio" id="q6c-ds" name="q6-ds" value="C">
+                <label for="q6c-ds">C. items()</label><br>
+                <input type="radio" id="q6d-ds" name="q6-ds" value="D">
+                <label for="q6d-ds">D. get()</label><br>
+
+                <p>7. What is the output of this?</p>
+                <pre><code>s = {"apple", "banana"}
+s.add("apple")
+print(s)</code></pre>
+                <input type="radio" id="q7a-ds" name="q7-ds" value="A">
+                <label for="q7a-ds">A. {"apple", "apple", "banana"}</label><br>
+                <input type="radio" id="q7b-ds" name="q7-ds" value="B">
+                <label for="q7b-ds">B. {"banana"}</label><br>
+                <input type="radio" id="q7c-ds" name="q7-ds" value="C">
+                <label for="q7c-ds">C. {"apple", "banana"}</label><br>
+                <input type="radio" id="q7d-ds" name="q7-ds" value="D">
+                <label for="q7d-ds">D. Error</label><br>
+
+                <p>8. Which one is not a valid set operation?</p>
+                <input type="radio" id="q8a-ds" name="q8-ds" value="A">
+                <label for="q8a-ds">A. A | B</label><br>
+                <input type="radio" id="q8b-ds" name="q8-ds" value="B">
+                <label for="q8b-ds">B. A & B</label><br>
+                <input type="radio" id="q8c-ds" name="q8-ds" value="C">
+                <label for="q8c-ds">C. A + B</label><br>
+                <input type="radio" id="q8d-ds" name="q8-ds" value="D">
+                <label for="q8d-ds">D. A - B</label><br>
+
+                <p>9. What happens if you try to access a dictionary key that doesn't exist using square brackets?</p>
+                <input type="radio" id="q9a-ds" name="q9-ds" value="A">
+                <label for="q9a-ds">A. Returns None</label><br>
+                <input type="radio" id="q9b-ds" name="q9-ds" value="B">
+                <label for="q9b-ds">B. Returns 0</label><br>
+                <input type="radio" id="q9c-ds" name="q9-ds" value="C">
+                <label for="q9c-ds">C. Gives an error</label><br>
+                <input type="radio" id="q9d-ds" name="q9-ds" value="D">
+                <label for="q9d-ds">D. Returns False</label><br>
+
+                <p>10. Which of the following data types can be a dictionary key?</p>
+                <input type="radio" id="q10a-ds" name="q10-ds" value="A">
+                <label for="q10a-ds">A. List</label><br>
+                <input type="radio" id="q10b-ds" name="q10-ds" value="B">
+                <label for="q10b-ds">B. Tuple</label><br>
+                <input type="radio" id="q10c-ds" name="q10-ds" value="C">
+                <label for="q10c-ds">C. Set</label><br>
+                <input type="radio" id="q10d-ds" name="q10-ds" value="D">
+                <label for="q10d-ds">D. Dictionary</label><br>
+
+                <button type="submit" class="submit-btn">Submit Quiz</button>
+            </form>
+        </div>
+
+        <h2 style="text-align: center;">Type Conversion</h2>
+
+        <h3>✅ What is Type Conversion?</h3>
+        <p>Type Conversion refers to changing the data type of a variable or value into another data type.</p>
+        <p>There are two types of conversions in Python:</p>
+
+        <h4>🔹 1. Implicit Type Conversion (Automatic)</h4>
+        <p>Python automatically converts one data type to another without user involvement when no data loss occurs.</p>
+        <h5>📌 Example:</h5>
+        <pre><code>x = 5        # int
+y = 2.0      # float
+z = x + y    # int + float → float
+print(z)     # Output: 7.0
+# Here, Python converts x from int to float to match the type of y.</code></pre>
+
+        <h4>🔹 2. Explicit Type Conversion (Type Casting)</h4>
+        <p>The programmer manually converts the data type using built-in functions like:</p>
+        <table>
+            <thead>
+                <tr><th>Function</th><th>Description</th></tr>
+            </thead>
+            <tbody>
+                <tr><td><code>int()</code></td><td>Converts to integer</td></tr>
+                <tr><td><code>float()</code></td><td>Converts to float</td></tr>
+                <tr><td><code>str()</code></td><td>Converts to string</td></tr>
+                <tr><td><code>list()</code></td><td>Converts to list</td></tr>
+                <tr><td><code>tuple()</code></td><td>Converts to tuple</td></tr>
+                <tr><td><code>bool()</code></td><td>Converts to Boolean</td></tr>
+            </tbody>
+        </table>
+        <h5>📌 Examples:</h5>
+        <pre><code>a = "123"
+b = int(a)        # String to int
+
+c = 3.99
+d = int(c)        # Float to int → 3 (decimal dropped)
+
+e = str(100)      # Int to string</code></pre>
+        <h4>⚠️ Notes:</h4>
+        <ul>
+            <li>Only compatible types can be converted.</li>
+            <li>Trying to convert an invalid string to a number (e.g., "abc" to int) will raise a ValueError.</li>
+        </ul>
+
+        <div class="quiz-section">
+            <h3>🧠 10 MCQs on Type Conversion</h3>
+            <form id="quiz-form-type-conv">
+                <p>1. What is type conversion in Python?</p>
+                <input type="radio" id="q1a-tc" name="q1-tc" value="A">
+                <label for="q1a-tc">A. Changing a variable's name</label><br>
+                <input type="radio" id="q1b-tc" name="q1-tc" value="B">
+                <label for="q1b-tc">B. Converting one data type to another</label><br>
+                <input type="radio" id="q1c-tc" name="q1-tc" value="C">
+                <label for="q1c-tc">C. Converting variable to constant</label><br>
+                <input type="radio" id="q1d-tc" name="q1-tc" value="D">
+                <label for="q1d-tc">D. Reversing a list</label><br>
+
+                <p>2. Which of the following is an example of implicit type conversion?</p>
+                <input type="radio" id="q2a-tc" name="q2-tc" value="A">
+                <label for="q2a-tc">A. int("123")</label><br>
+                <input type="radio" id="q2b-tc" name="q2-tc" value="B">
+                <label for="q2b-tc">B. str(5)</label><br>
+                <input type="radio" id="q2c-tc" name="q2-tc" value="C">
+                <label for="q2c-tc">C. 5 + 2.0</label><br>
+                <input type="radio" id="q2d-tc" name="q2-tc" value="D">
+                <label for="q2d-tc">D. float("3.14")</label><br>
+
+                <p>3. What will be the output of this code?</p>
+                <pre><code>a = int(3.7)
+print(a)</code></pre>
+                <input type="radio" id="q3a-tc" name="q3-tc" value="A">
+                <label for="q3a-tc">A. 3.7</label><br>
+                <input type="radio" id="q3b-tc" name="q3-tc" value="B">
+                <label for="q3b-tc">B. 4</label><br>
+                <input type="radio" id="q3c-tc" name="q3-tc" value="C">
+                <label for="q3c-tc">C. 3</label><br>
+                <input type="radio" id="q3d-tc" name="q3-tc" value="D">
+                <label for="q3d-tc">D. Error</label><br>
+
+                <p>4. What does str(123) return?</p>
+                <input type="radio" id="q4a-tc" name="q4-tc" value="A">
+                <label for="q4a-tc">A. 123</label><br>
+                <input type="radio" id="q4b-tc" name="q4-tc" value="B">
+                <label for="q4b-tc">B. "123"</label><br>
+                <input type="radio" id="q4c-tc" name="q4-tc" value="C">
+                <label for="q4c-tc">C. '1', '2', '3'</label><br>
+                <input type="radio" id="q4d-tc" name="q4-tc" value="D">
+                <label for="q4d-tc">D. Error</label><br>
+
+                <p>5. What will this code print?</p>
+                <pre><code>x = "abc"
+y = int(x)</code></pre>
+                <input type="radio" id="q5a-tc" name="q5-tc" value="A">
+                <label for="q5a-tc">A. abc</label><br>
+                <input type="radio" id="q5b-tc" name="q5-tc" value="B">
+                <label for="q5b-tc">B. 0</label><br>
+                <input type="radio" id="q5c-tc" name="q5-tc" value="C">
+                <label for="q5c-tc">C. Error</label><br>
+                <input type="radio" id="q5d-tc" name="q5-tc" value="D">
+                <label for="q5d-tc">D. None</label><br>
+
+                <p>6. Which of these will convert a float to an integer?</p>
+                <input type="radio" id="q6a-tc" name="q6-tc" value="A">
+                <label for="q6a-tc">A. str()</label><br>
+                <input type="radio" id="q6b-tc" name="q6-tc" value="B">
+                <label for="q6b-tc">B. float()</label><br>
+                <input type="radio" id="q6c-tc" name="q6-tc" value="C">
+                <label for="q6c-tc">C. int()</label><br>
+                <input type="radio" id="q6d-tc" name="q6-tc" value="D">
+                <label for="q6d-tc">D. bool()</label><br>
+
+                <p>7. What will be the result of this?</p>
+                <pre><code>bool(0)</code></pre>
+                <input type="radio" id="q7a-tc" name="q7-tc" value="A">
+                <label for="q7a-tc">A. True</label><br>
+                <input type="radio" id="q7b-tc" name="q7-tc" value="B">
+                <label for="q7b-tc">B. False</label><br>
+                <input type="radio" id="q7c-tc" name="q7-tc" value="C">
+                <label for="q7c-tc">C. 0</label><br>
+                <input type="radio" id="q7d-tc" name="q7-tc" value="D">
+                <label for="q7d-tc">D. Error</label><br>
+
+                <p>8. What is the output of this code?</p>
+                <pre><code>print(float("5.6"))</code></pre>
+                <input type="radio" id="q8a-tc" name="q8-tc" value="A">
+                <label for="q8a-tc">A. 5</label><br>
+                <input type="radio" id="q8b-tc" name="q8-tc" value="B">
+                <label for="q8b-tc">B. 5.0</label><br>
+                <input type="radio" id="q8c-tc" name="q8-tc" value="C">
+                <label for="q8c-tc">C. 5.6</label><br>
+                <input type="radio" id="q8d-tc" name="q8-tc" value="D">
+                <label for="q8d-tc">D. Error</label><br>
+
+                <p>9. What will type(str(100)) return?</p>
+                <input type="radio" id="q9a-tc" name="q9-tc" value="A">
+                <label for="q9a-tc">A. &lt;class 'str'&gt;</label><br>
+                <input type="radio" id="q9b-tc" name="q9-tc" value="B">
+                <label for="q9b-tc">B. &lt;class 'int'&gt;</label><br>
+                <input type="radio" id="q9c-tc" name="q9-tc" value="C">
+                <label for="q9c-tc">C. 100</label><br>
+                <input type="radio" id="q9d-tc" name="q9-tc" value="D">
+                <label for="q9d-tc">D. Error</label><br>
+
+                <p>10. What happens if you try int("hello")?</p>
+                <input type="radio" id="q10a-tc" name="q10-tc" value="A">
+                <label for="q10a-tc">A. Converts to 0</label><br>
+                <input type="radio" id="q10b-tc" name="q10-tc" value="B">
+                <label for="q10b-tc">B. Converts to ASCII</label><br>
+                <input type="radio" id="q10c-tc" name="q10-tc" value="C">
+                <label for="q10c-tc">C. Raises error</label><br>
+                <input type="radio" id="q10d-tc" name="q10-tc" value="D">
+                <label for="q10d-tc">D. Converts to float</label><br>
+
+                <button type="submit" class="submit-btn">Submit Quiz</button>
+            </form>
+        </div>
+
+    </div>
+    <script>
+        // Quiz answer keys for each quiz form
+        const quizKeys = {
+            'quiz-form': ['C', 'B', 'A', 'B', 'B', 'B', 'B', 'C', 'C', 'C'], // Numbers and Strings
+            'quiz-form-lists-tuples': ['B', 'B', 'B', 'B', 'C', 'B', 'C', 'B', 'C', 'B'], // Lists and Tuples
+            'quiz-form-dict-set': ['C', 'C', 'C', 'D', 'A', 'A', 'C', 'C', 'C', 'B'], // Dictionaries and Sets
+            'quiz-form-type-conv': ['B', 'C', 'C', 'B', 'C', 'C', 'B', 'C', 'A', 'C'] // Type Conversion
+        };
+
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('form').forEach(function(form) {
+                form.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    const formId = form.id;
+                    const answers = quizKeys[formId];
+                    if (!answers) return;
+                    let score = 0;
+                    for (let i = 0; i < 10; i++) {
+                        let qName = formId === 'quiz-form' ? `q${i+1}` :
+                                    formId === 'quiz-form-lists-tuples' ? `q${i+1}` :
+                                    formId === 'quiz-form-dict-set' ? `q${i+1}-ds` :
+                                    formId === 'quiz-form-type-conv' ? `q${i+1}-tc` : '';
+                        const selected = form.querySelector(`input[name='${qName}']:checked`);
+                        if (selected && selected.value === answers[i]) {
+                            score++;
+                        }
+                    }
+                    // Remove previous result if any
+                    let resultDiv = form.querySelector('.quiz-result');
+                    if (!resultDiv) {
+                        resultDiv = document.createElement('div');
+                        resultDiv.className = 'quiz-result';
+                        resultDiv.style.textAlign = 'center';
+                        resultDiv.style.fontWeight = 'bold';
+                        resultDiv.style.fontSize = '1.3rem';
+                        resultDiv.style.marginTop = '15px';
+                        form.appendChild(resultDiv);
+                    }
+                    // Always show result (force update)
+                    resultDiv.textContent = `You scored ${score} out of 10!`;
+                    resultDiv.style.display = 'block';
+                });
+            });
+        });
+    </script>
+</body>
+</html>

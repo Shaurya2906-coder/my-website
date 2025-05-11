@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python: A Journey from Beginner to Expert</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fab fa-python"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#intro"><i class="fas fa-info-circle"></i> Introduction</a></li>
+                <li><a href="#topics"><i class="fas fa-book"></i> Topics</a></li>
+                <li><a href="#quizzes"><i class="fas fa-question-circle"></i> Quizzes</a></li>
+                <li><a href="#progress"><i class="fas fa-chart-line"></i> Progress</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <div class="python-logo">
+                    <i class="fab fa-python"></i>
+                </div>
+                <h1 class="python-title">Python: A Journey from Beginner to Expert</h1>
+                <p>Learn Python from basics to advanced concepts with interactive lessons and hands-on practice.</p>
+                <div class="start-learning">
+                    <p>Begin your Python journey with our comprehensive learning path</p>
+                    <div class="learning-path">
+                        <ul>
+                            <li>Python Basics and Syntax</li>
+                            <li>Data Structures and Algorithms</li>
+                            <li>Object-Oriented Programming</li>
+                            <li>Advanced Python Concepts</li>
+                        </ul>
+                        <button class="start-learning-btn" data-topic="python-basics">Start Learning</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <section id="intro" class="intro-section">
+            <h2>Introduction to Python</h2>
+            <div class="intro-content">
+                <div class="intro-text">
+                    <p class="lead">Python is a high-level, interpreted programming language known for its simplicity and readability.</p>
+                    <p>It's one of the most popular programming languages in the world, used by millions of developers for everything from web development to artificial intelligence.</p>
+                    
+                    <h3>Why Choose Python?</h3>
+                    <p>Python has become the go-to language for beginners and experts alike due to its:</p>
+                    <ul>
+                        <li>Easy-to-learn syntax that reads like English</li>
+                        <li>Vast ecosystem of libraries and frameworks</li>
+                        <li>Strong community support and extensive documentation</li>
+                        <li>Versatility across different domains</li>
+                        <li>Excellent for both scripting and large-scale applications</li>
+                    </ul>
+
+                    <h3>Python's Impact</h3>
+                    <p>Python has revolutionized various fields:</p>
+                    <ul>
+                        <li><strong>Data Science & AI:</strong> Powering machine learning algorithms and data analysis</li>
+                        <li><strong>Web Development:</strong> Building robust web applications with Django and Flask</li>
+                        <li><strong>Automation:</strong> Simplifying repetitive tasks and system administration</li>
+                        <li><strong>Game Development:</strong> Creating games using Pygame and other frameworks</li>
+                        <li><strong>Scientific Computing:</strong> Advancing research in physics, biology, and more</li>
+                    </ul>
+
+                    <h3>Getting Started</h3>
+                    <p>Python's philosophy of "Simple is better than complex" makes it an ideal first programming language. Whether you're:</p>
+                    <ul>
+                        <li>A complete beginner looking to start your programming journey</li>
+                        <li>A student seeking to understand programming concepts</li>
+                        <li>A professional wanting to add Python to your skill set</li>
+                        <li>A researcher needing powerful data analysis tools</li>
+                    </ul>
+                    <p>Python provides the perfect platform to achieve your goals.</p>
+                </div>
+                
+                <div class="properties-grid">
+                    <div class="property-card">
+                        <i class="fas fa-code"></i>
+                        <h3>Simple and Readable Syntax</h3>
+                        <ul>
+                            <li>Uses indentation for code blocks</li>
+                            <li>English-like syntax</li>
+                            <li>Easy to learn and understand</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="property-card">
+                        <i class="fas fa-play-circle"></i>
+                        <h3>Interpreted Language</h3>
+                        <ul>
+                            <li>No compilation needed</li>
+                            <li>Runs line by line</li>
+                            <li>Easy debugging</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="property-card">
+                        <i class="fas fa-random"></i>
+                        <h3>Dynamically Typed</h3>
+                        <ul>
+                            <li>No type declaration needed</li>
+                            <li>Flexible variable assignment</li>
+                            <li>Example: x = 10, y = "Hello"</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="property-card">
+                        <i class="fas fa-cube"></i>
+                        <h3>Object-Oriented</h3>
+                        <ul>
+                            <li>Everything is an object</li>
+                            <li>Supports OOP concepts</li>
+                            <li>Encapsulation, inheritance, polymorphism</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="property-card">
+                        <i class="fas fa-layer-group"></i>
+                        <h3>High-Level Language</h3>
+                        <ul>
+                            <li>No memory management needed</li>
+                            <li>Abstracted hardware operations</li>
+                            <li>Focus on problem-solving</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="property-card">
+                        <i class="fas fa-globe"></i>
+                        <h3>Portable & Cross-Platform</h3>
+                        <ul>
+                            <li>Runs on Windows, Linux, macOS</li>
+                            <li>No code modification needed</li>
+                            <li>Write once, run anywhere</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="property-card">
+                        <i class="fas fa-boxes"></i>
+                        <h3>Extensive Libraries</h3>
+                        <ul>
+                            <li>Data Science: NumPy, Pandas</li>
+                            <li>Web: Flask, Django</li>
+                            <li>ML: TensorFlow, Scikit-Learn</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="property-card">
+                        <i class="fas fa-project-diagram"></i>
+                        <h3>Multi-Paradigm</h3>
+                        <ul>
+                            <li>Procedural programming</li>
+                            <li>Object-oriented programming</li>
+                            <li>Functional programming</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="topics" class="topics-section">
+            <h2>Python Topics</h2>
+            <div class="topics-grid">
+                <div class="topic-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Basic Syntax</h3>
+                    <p>Learn Python's fundamental syntax and structure</p>
+                    <div class="learning-path">
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Variables and Data Types</li>
+                            <li><i class="fas fa-check-circle"></i> Operators and Expressions</li>
+                            <li><i class="fas fa-check-circle"></i> Input and Output</li>
+                            <li><i class="fas fa-check-circle"></i> Comments and Documentation</li>
+                        </ul>
+                        <button class="start-learning-btn" onclick="window.location.href='learning.html#basic-syntax';">Start Learning</button>
+                    </div>
+                </div>
+                <div class="topic-card">
+                    <i class="fas fa-database"></i>
+                    <h3>Data Types</h3>
+                    <p>Understanding variables, lists, and dictionaries</p>
+                    <div class="learning-path">
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Numbers and Strings</li>
+                            <li><i class="fas fa-check-circle"></i> Lists and Tuples</li>
+                            <li><i class="fas fa-check-circle"></i> Dictionaries and Sets</li>
+                            <li><i class="fas fa-check-circle"></i> Type Conversion</li>
+                        </ul>
+                        <button class="start-learning-btn" onclick="window.location.href='data-types.html';">Start Learning</button>
+                    </div>
+                </div>
+                <div class="topic-card">
+                    <i class="fas fa-project-diagram"></i>
+                    <h3>Control Flow</h3>
+                    <p>Loops, conditions, and program flow</p>
+                    <div class="learning-path">
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> if-else Statements</li>
+                            <li><i class="fas fa-check-circle"></i> Loops (for and while)</li>
+                            <li><i class="fas fa-check-circle"></i> Break and Continue</li>
+                            <li><i class="fas fa-check-circle"></i> Match Statements</li>
+                        </ul>
+                        <button class="start-learning-btn" onclick="window.location.href='control-flow.html';">Start Learning</button>
+                    </div>
+                </div>
+                <div class="topic-card">
+                    <i class="fas fa-cogs"></i>
+                    <h3>Functions</h3>
+                    <p>Creating and using functions in Python</p>
+                    <div class="learning-path">
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Function Definition</li>
+                            <li><i class="fas fa-check-circle"></i> Parameters and Arguments</li>
+                            <li><i class="fas fa-check-circle"></i> Return Values</li>
+                            <li><i class="fas fa-check-circle"></i> Lambda Functions</li>
+                        </ul>
+                        <button class="start-learning-btn" onclick="window.location.href='functions.html';">Start Learning</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Removed the 'Variables and Data Types in Python' section as it has been moved to learning.html -->
+
+        <section id="quizzes" class="quizzes-section">
+            <h2>Interactive Quizzes</h2>
+            <div class="quiz-container">
+                <div class="quiz-card">
+                    <h3>Python Basics Quiz</h3>
+                    <p>Test your knowledge of Python fundamentals</p>
+                    <div class="quiz-questions">
+                        <div class="question">
+                            <p>What is the correct way to create a variable in Python?</p>
+                            <div class="options">
+                                <label><input type="radio" name="q1" value="a"> var x = 5</label>
+                                <label><input type="radio" name="q1" value="b"> x = 5</label>
+                                <label><input type="radio" name="q1" value="c"> int x = 5</label>
+                                <label><input type="radio" name="q1" value="d"> let x = 5</label>
+                            </div>
+                        </div>
+                        <div class="question">
+                            <p>Which of the following is a valid Python comment?</p>
+                            <div class="options">
+                                <label><input type="radio" name="q2" value="a"> // This is a comment</label>
+                                <label><input type="radio" name="q2" value="b"> /* This is a comment */</label>
+                                <label><input type="radio" name="q2" value="c"> # This is a comment</label>
+                                <label><input type="radio" name="q2" value="d"> -- This is a comment</label>
+                            </div>
+                        </div>
+                        <div class="question">
+                            <p>What is the output of print(2 + 2 * 2)?</p>
+                            <div class="options">
+                                <label><input type="radio" name="q3" value="a"> 8</label>
+                                <label><input type="radio" name="q3" value="b"> 6</label>
+                                <label><input type="radio" name="q3" value="c"> 4</label>
+                                <label><input type="radio" name="q3" value="d"> 2</label>
+                            </div>
+                        </div>
+                        <div class="question">
+                            <p>What is the output of the following code?<br>
+                            <code>x = 5<br>y = "5"<br>print(x + int(y))</code></p>
+                            <div class="options">
+                                <label><input type="radio" name="q4" value="a"> 55</label>
+                                <label><input type="radio" name="q4" value="b"> 10</label>
+                                <label><input type="radio" name="q4" value="c"> Error</label>
+                                <label><input type="radio" name="q4" value="d"> "10"</label>
+                            </div>
+                        </div>
+                        <div class="question">
+                            <p>What data type is returned by the input() function in Python?</p>
+                            <div class="options">
+                                <label><input type="radio" name="q5" value="a"> Integer</label>
+                                <label><input type="radio" name="q5" value="b"> String</label>
+                                <label><input type="radio" name="q5" value="c"> Float</label>
+                                <label><input type="radio" name="q5" value="d"> Boolean</label>
+                            </div>
+                        </div>
+                        <div class="question">
+                            <p>What is the correct syntax to define a function in Python?</p>
+                            <div class="options">
+                                <label><input type="radio" name="q6" value="a"> function myFunction():</label>
+                                <label><input type="radio" name="q6" value="b"> def myFunction:</label>
+                                <label><input type="radio" name="q6" value="c"> def myFunction():</label>
+                                <label><input type="radio" name="q6" value="d"> define myFunction():</label>
+                            </div>
+                        </div>
+                        <div class="question">
+                            <p>Which keyword is used to create a loop that continues until a condition becomes false?</p>
+                            <div class="options">
+                                <label><input type="radio" name="q7" value="a"> for</label>
+                                <label><input type="radio" name="q7" value="b"> while</label>
+                                <label><input type="radio" name="q7" value="c"> loop</label>
+                                <label><input type="radio" name="q7" value="d"> repeat</label>
+                            </div>
+                        </div>
+                        <div class="question">
+                            <p>What will be the output of the following code?<br>
+                            <code>numbers = [1, 2, 3, 4, 5]<br>print(numbers[-2])</code></p>
+                            <div class="options">
+                                <label><input type="radio" name="q8" value="a"> 2</label>
+                                <label><input type="radio" name="q8" value="b"> 3</label>
+                                <label><input type="radio" name="q8" value="c"> 4</label>
+                                <label><input type="radio" name="q8" value="d"> 5</label>
+                            </div>
+                        </div>
+                        <div class="question">
+                            <p>Which of the following statements is used to handle exceptions in Python?</p>
+                            <div class="options">
+                                <label><input type="radio" name="q9" value="a"> catch</label>
+                                <label><input type="radio" name="q9" value="b"> try-except</label>
+                                <label><input type="radio" name="q9" value="c"> throw</label>
+                                <label><input type="radio" name="q9" value="d"> error</label>
+                            </div>
+                        </div>
+                        <div class="question">
+                            <p>What will be the output of the following code?<br>
+                            <code>for i in range(2, 10, 3):<br>    print(i, end=" ")</code></p>
+                            <div class="options">
+                                <label><input type="radio" name="q10" value="a"> 2 5 8</label>
+                                <label><input type="radio" name="q10" value="b"> 2 3 4 5 6 7 8 9</label>
+                                <label><input type="radio" name="q10" value="c"> 2 5 7</label>
+                                <label><input type="radio" name="q10" value="d"> 2 5 8 11</label>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="submit-btn">Submit Quiz</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="progress" class="progress-section">
+            <h2>Your Progress</h2>
+            <div class="progress-container">
+                <div class="progress-card">
+                    <h3>Overall Progress</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 0%"></div>
+                    </div>
+                    <p>0% Complete</p>
+                </div>
+                <div class="progress-stats">
+                    <div class="stat">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Quizzes Completed: 0</span>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-star"></i>
+                        <span>Average Score: 0%</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Learning Modal -->
+    <div id="learning-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 id="modal-title">Start Learning</h2>
+            <div class="learning-content">
+                <div class="topic-overview">
+                    <h3>Topic Overview</h3>
+                    <p id="topic-description"></p>
+                </div>
+                <div class="learning-steps">
+                    <h3>Learning Steps</h3>
+                    <ol id="learning-steps-list"></ol>
+                </div>
+                <div class="practice-section">
+                    <h3>Practice Exercise</h3>
+                    <div id="practice-content"></div>
+                </div>
+            </div>
+            <button class="next-step-btn">Next Step</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Python Learning Platform. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const quizCard = document.querySelector(".quiz-card");
+            if (!quizCard) return;
+            const submitButton = quizCard.querySelector(".submit-btn");
+            if (!submitButton) return;
+
+            submitButton.addEventListener("click", function(event) {
+                event.preventDefault();
+                let score = 0;
+                // Correct answers for the quiz
+                const answers = ["b", "c", "b", "b", "b", "c", "b", "c", "b", "a"];
+                for (let i = 1; i <= 10; i++) {
+                    const selected = quizCard.querySelector(`input[name='q${i}']:checked`);
+                    if (selected && selected.value === answers[i - 1]) {
+                        score++;
+                    }
+                }
+                // Show score in Progress section
+                const progressSection = document.querySelector('.progress-section');
+                if (progressSection) {
+                    const progressStats = progressSection.querySelector('.progress-stats');
+                    if (progressStats) {
+                        // Update Quizzes Completed
+                        let completedStat = progressStats.querySelector('.stat span');
+                        if (completedStat && completedStat.textContent.includes('Quizzes Completed')) {
+                            completedStat.innerHTML = '<i class="fas fa-check-circle"></i> Quizzes Completed: 1';
+                        }
+                        // Update Average Score
+                        let avgStat = progressStats.querySelectorAll('.stat span')[1];
+                        if (avgStat && avgStat.textContent.includes('Average Score')) {
+                            avgStat.innerHTML = `<i class="fas fa-star"></i> Average Score: ${score * 10}%`;
+                        }
+                    }
+                    // Update progress bar and percent
+                    const progressBar = progressSection.querySelector('.progress');
+                    const progressText = progressSection.querySelector('.progress-card p');
+                    if (progressBar && progressText) {
+                        progressBar.style.width = `${score * 10}%`;
+                        progressText.textContent = `${score * 10}% Complete`;
+                    }
+                }
+                // Remove previous result if any (below quiz)
+                let resultDiv = quizCard.querySelector('.quiz-result');
+                if (!resultDiv) {
+                    resultDiv = document.createElement('div');
+                    resultDiv.className = 'quiz-result';
+                    resultDiv.style.textAlign = 'center';
+                    resultDiv.style.fontWeight = 'bold';
+                    resultDiv.style.fontSize = '1.2rem';
+                    resultDiv.style.marginTop = '12px';
+                    quizCard.appendChild(resultDiv);
+                }
+                resultDiv.textContent = `You scored ${score} out of 10!`;
+                resultDiv.style.display = 'block';
+            });
+        });
+    </script>
+</body>
+</html>

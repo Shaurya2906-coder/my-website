@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Learning Content</title>
+    <style>
+        /* Updated styles for a more professional look */
+        body {
+            font-family: 'Arial', sans-serif;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #f0f0f0;
+            background: linear-gradient(to right, #1e3c72, #2a5298); /* Cool gradient background */
+            margin: 0;
+            padding: 0;
+        }
+
+        .content-section {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .content-section h1 {
+            font-size: 2.5rem;
+            text-align: center;
+            color: #ffd700;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+
+        .content-section h2 {
+            font-size: 1.8rem;
+            color: #ffd700;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .content-section p {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+        }
+
+        .content-section pre {
+            background: #222;
+            color: #0f0;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            font-size: 1rem;
+        }
+
+        .content-section table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .content-section table th,
+        .content-section table td {
+            border: 1px solid #fff;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .content-section table th {
+            background: #444;
+            color: #ffd700;
+        }
+
+        .content-section table td {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .quiz-section {
+            margin-top: 30px;
+        }
+
+        .quiz-section h3 {
+            font-size: 1.5rem;
+            color: #ffd700;
+            margin-bottom: 10px;
+        }
+
+        .quiz-section p {
+            margin: 10px 0;
+            font-size: 1.1rem;
+        }
+
+        .submit-btn {
+            display: block;
+            margin: 20px auto;
+            padding: 15px 30px;
+            font-size: 1.5rem;
+            background-color: #ffd700;
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .submit-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+        }
+    </style>
+    <style>
+        body {
+            background-color: #000033; /* Deep dark blue background */
+            color: #f0f0f0;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="content-section"></div>
+        <h1 style="font-size: 3em; text-align: center; color: #ffd700; text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6); margin-bottom: 30px;">Explore Python Variables and Data Types</h1>
+
+        <h2>🔹 What is a Variable?</h2>
+        <p>A variable is like a container used to store data. In Python, you don’t need to declare the type of a variable — Python figures it out automatically.</p>
+        <pre><code>name = "Shaurya"
+age = 18
+score = 99.5
+is_batsman = True</code></pre>
+
+        <h2>✅ Python Rules for Variables:</h2>
+        <ul>
+            <li>Can contain letters, numbers, and underscores</li>
+            <li>Must start with a letter or an underscore (_)</li>
+            <li>Case-sensitive: <code>Age</code> and <code>age</code> are different</li>
+        </ul>
+
+        <h2>🔢 Python Data Types</h2>
+        <p>Python has several built-in data types. Here's a quick breakdown:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>Example</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>int</code></td>
+                    <td>10</td>
+                    <td>Integer numbers</td>
+                </tr>
+                <tr>
+                    <td><code>float</code></td>
+                    <td>3.14</td>
+                    <td>Decimal numbers</td>
+                </tr>
+                <tr>
+                    <td><code>str</code></td>
+                    <td>"Hello"</td>
+                    <td>Text</td>
+                </tr>
+                <tr>
+                    <td><code>bool</code></td>
+                    <td>True, False</td>
+                    <td>Boolean values</td>
+                </tr>
+                <tr>
+                    <td><code>NoneType</code></td>
+                    <td>None</td>
+                    <td>Represents “nothing”</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>✨ Examples:</h2>
+        <pre><code># Integer
+runs = 100
+print(type(runs))  # <class 'int'>
+
+# Float
+strike_rate = 144.50
+print(type(strike_rate))  # <class 'float'>
+
+# String
+player = "Shaurya Singh"
+print(type(player))  # <class 'str'>
+
+# Boolean
+is_out = False
+print(type(is_out))  # <class 'bool'>
+
+# NoneType
+injury_status = None
+print(type(injury_status))  # <class 'NoneType'></code></pre>
+
+        <a href="data-types.html" class="start-learning-btn">Start Learning</a>
+
+        <div class="quiz-section">
+            <h3>📝 Quiz Time!</h3>
+
+            <p><strong>Q1:</strong> What is the output of the following code?</p>
+<pre><code>x = 10
+y = "10"
+print(x + int(y))</code></pre>
+<input type="radio" id="q1a" name="q1" value="A">
+<label for="q1a">A. 1010</label><br>
+<input type="radio" id="q1b" name="q1" value="B">
+<label for="q1b">B. 20</label><br>
+<input type="radio" id="q1c" name="q1" value="C">
+<label for="q1c">C. Error</label><br>
+<input type="radio" id="q1d" name="q1" value="D">
+<label for="q1d">D. None of the above</label><br>
+
+<p><strong>Q2:</strong> Which of the following is a valid variable name?</p>
+<input type="radio" id="q2a" name="q2" value="A">
+<label for="q2a">A. 123name</label><br>
+<input type="radio" id="q2b" name="q2" value="B">
+<label for="q2b">B. name-123</label><br>
+<input type="radio" id="q2c" name="q2" value="C">
+<label for="q2c">C. name_123</label><br>
+<input type="radio" id="q2d" name="q2" value="D">
+<label for="q2d">D. None of the above</label><br>
+
+            <p><strong>Q3:</strong> not (True and False) evaluates to:</p>
+            <form id="quiz-form">
+                <input type="radio" id="q3a" name="q3" value="A">
+                <label for="q3a">A. True</label><br>
+                <input type="radio" id="q3b" name="q3" value="B">
+                <label for="q3b">B. False</label><br>
+
+                <p><strong>Q4:</strong> What will 10 % 3 return?</p>
+                <input type="radio" id="q4a" name="q4" value="A">
+                <label for="q4a">A. 1</label><br>
+                <input type="radio" id="q4b" name="q4" value="B">
+                <label for="q4b">B. 3</label><br>
+                <input type="radio" id="q4c" name="q4" value="C">
+                <label for="q4c">C. 0</label><br>
+                <input type="radio" id="q4d" name="q4" value="D">
+                <label for="q4d">D. 10</label><br>
+
+                <p><strong>Q5:</strong> Which operator checks if two variables refer to the same object?</p>
+                <input type="radio" id="q5a" name="q5" value="A">
+                <label for="q5a">A. ==</label><br>
+                <input type="radio" id="q5b" name="q5" value="B">
+                <label for="q5b">B. is</label><br>
+                <input type="radio" id="q5c" name="q5" value="C">
+                <label for="q5c">C. in</label><br>
+                <input type="radio" id="q5d" name="q5" value="D">
+                <label for="q5d">D. !=</label><br>
+
+                <p><strong>Q6:</strong> 7 // 3 gives:</p>
+                <input type="radio" id="q6a" name="q6" value="A">
+                <label for="q6a">A. 2</label><br>
+                <input type="radio" id="q6b" name="q6" value="B">
+                <label for="q6b">B. 2.333</label><br>
+                <input type="radio" id="q6c" name="q6" value="C">
+                <label for="q6c">C. 2.0</label><br>
+                <input type="radio" id="q6d" name="q6" value="D">
+                <label for="q6d">D. 3</label><br>
+
+                <p><strong>Q7:</strong> Which one is a logical operator?</p>
+                <input type="radio" id="q7a" name="q7" value="A">
+                <label for="q7a">A. +</label><br>
+                <input type="radio" id="q7b" name="q7" value="B">
+                <label for="q7b">B. and</label><br>
+                <input type="radio" id="q7c" name="q7" value="C">
+                <label for="q7c">C. is</label><br>
+                <input type="radio" id="q7d" name="q7" value="D">
+                <label for="q7d">D. in</label><br>
+
+                <p><strong>Q8:</strong> Expression 4 >= 5 returns:</p>
+                <input type="radio" id="q8a" name="q8" value="A">
+                <label for="q8a">A. True</label><br>
+                <input type="radio" id="q8b" name="q8" value="B">
+                <label for="q8b">B. False</label><br>
+
+                <p><strong>Q9:</strong> Which of the following is a membership operator?</p>
+                <input type="radio" id="q9a" name="q9" value="A">
+                <label for="q9a">A. is</label><br>
+                <input type="radio" id="q9b" name="q9" value="B">
+                <label for="q9b">B. and</label><br>
+                <input type="radio" id="q9c" name="q9" value="C">
+                <label for="q9c">C. in</label><br>
+                <input type="radio" id="q9d" name="q9" value="D">
+                <label for="q9d">D. not</label><br>
+
+                <p><strong>Q10:</strong> What will be the value of x after this code?</p>
+                <pre><code>x = 3
+x *= 2</code></pre>
+                <input type="radio" id="q10a" name="q10" value="A">
+                <label for="q10a">A. 3</label><br>
+                <input type="radio" id="q10b" name="q10" value="B">
+                <label for="q10b">B. 5</label><br>
+                <input type="radio" id="q10c" name="q10" value="C">
+                <label for="q10c">C. 6</label><br>
+                <input type="radio" id="q10d" name="q10" value="D">
+                <label for="q10d">D. 9</label><br>
+
+                <button type="submit" class="submit-btn">Submit Quiz</button>
+            </form>
+        </div>
+        <hr style="margin: 20px 0;">
+        <h2 style="text-align: center; margin-top: 20px;">Operators and Expressions in Python</h2>
+        <h3>1. What is an Operator?</h3>
+        <p>Operators are special symbols that perform operations on variables and values.</p>
+        <pre><code>a = 10
+b = 5
+print(a + b)   # + is the operator, adds 10 and 5 → 15</code></pre>
+
+        <h3>2. What is an Expression?</h3>
+        <p>An expression is a combination of variables, operators, and values that Python can evaluate and produce a result.</p>
+        <pre><code>(3 + 4) * 5  # Python calculates it to get 35</code></pre>
+
+        <h3>3. Types of Operators</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>Example Operators</th>
+                    <th>Purpose</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Arithmetic Operators</td>
+                    <td>+, -, *, /, %, **, //</td>
+                    <td>Perform math operations</td>
+                </tr>
+                <tr>
+                    <td>Comparison Operators</td>
+                    <td>==, !=, >, <, >=, <=</td>
+                    <td>Compare two values (True/False)</td>
+                </tr>
+                <tr>
+                    <td>Logical Operators</td>
+                    <td>and, or, not</td>
+                    <td>Combine conditional statements</td>
+                </tr>
+                <tr>
+                    <td>Assignment Operators</td>
+                    <td>=, +=, -=, *=, /=, //=, %=, **=</td>
+                    <td>Assign values</td>
+                </tr>
+                <tr>
+                    <td>Membership Operators</td>
+                    <td>in, not in</td>
+                    <td>Check membership in a sequence</td>
+                </tr>
+                <tr>
+                    <td>Identity Operators</td>
+                    <td>is, is not</td>
+                    <td>Compare memory locations</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>4. Arithmetic Operators (with examples)</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Operator</th>
+                    <th>Name</th>
+                    <th>Example</th>
+                    <th>Result</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>+</td>
+                    <td>Addition</td>
+                    <td>2 + 3</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>-</td>
+                    <td>Subtraction</td>
+                    <td>5 - 2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>*</td>
+                    <td>Multiplication</td>
+                    <td>3 * 4</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>/</td>
+                    <td>Division</td>
+                    <td>10 / 2</td>
+                    <td>5.0</td>
+                </tr>
+                <tr>
+                    <td>//</td>
+                    <td>Floor Division</td>
+                    <td>9 // 2</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>%</td>
+                    <td>Modulus</td>
+                    <td>10 % 3</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>**</td>
+                    <td>Exponentiation</td>
+                    <td>2 ** 3</td>
+                    <td>8</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>5. Comparison Operators (with examples)</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Operator</th>
+                    <th>Meaning</th>
+                    <th>Example</th>
+                    <th>Result</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>==</td>
+                    <td>Equal to</td>
+                    <td>5 == 5</td>
+                    <td>True</td>
+                </tr>
+                <tr>
+                    <td>!=</td>
+                    <td>Not equal to</td>
+                    <td>5 != 3</td>
+                    <td>True</td>
+                </tr>
+                <tr>
+                    <td>></td>
+                    <td>Greater than</td>
+                    <td>5 > 2</td>
+                    <td>True</td>
+                </tr>
+                <tr>
+                    <td><</td>
+                    <td>Less than</td>
+                    <td>5 < 7</td>
+                    <td>True</td>
+                </tr>
+                <tr>
+                    <td>>=</td>
+                    <td>Greater or equal</td>
+                    <td>5 >= 5</td>
+                    <td>True</td>
+                </tr>
+                <tr>
+                    <td><=</td>
+                    <td>Less or equal</td>
+                    <td>5 <= 8</td>
+                    <td>True</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>6. Logical Operators (with examples)</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Operator</th>
+                    <th>Meaning</th>
+                    <th>Example</th>
+                    <th>Result</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>and</td>
+                    <td>Both True</td>
+                    <td>(5 > 3) and (4 > 2)</td>
+                    <td>True</td>
+                </tr>
+                <tr>
+                    <td>or</td>
+                    <td>At least one True</td>
+                    <td>(5 < 3) or (4 > 2)</td>
+                    <td>True</td>
+                </tr>
+                <tr>
+                    <td>not</td>
+                    <td>Reverse the result</td>
+                    <td>not(5 > 3)</td>
+                    <td>False</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>7. Assignment Operators (with examples)</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Operator</th>
+                    <th>Example</th>
+                    <th>Same as</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>=</td>
+                    <td>x = 5</td>
+                    <td>assign 5 to x</td>
+                </tr>
+                <tr>
+                    <td>+=</td>
+                    <td>x += 3</td>
+                    <td>x = x + 3</td>
+                </tr>
+                <tr>
+                    <td>-=</td>
+                    <td>x -= 2</td>
+                    <td>x = x - 2</td>
+                </tr>
+                <tr>
+                    <td>*=</td>
+                    <td>x *= 4</td>
+                    <td>x = x * 4</td>
+                </tr>
+                <tr>
+                    <td>/=</td>
+                    <td>x /= 2</td>
+                    <td>x = x / 2</td>
+                </tr>
+                <tr>
+                    <td>//=</td>
+                    <td>x //= 3</td>
+                    <td>x = x // 3</td>
+                </tr>
+                <tr>
+                    <td>%=</td>
+                    <td>x %= 5</td>
+                    <td>x = x % 5</td>
+                </tr>
+                <tr>
+                    <td>**=</td>
+                    <td>x **= 2</td>
+                    <td>x = x ** 2</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>8. Membership Operators (with examples)</h3>
+        <pre><code>list1 = [1, 2, 3]
+print(2 in list1)     # True
+print(5 not in list1) # True</code></pre>
+
+        <h3>9. Identity Operators (with examples)</h3>
+        <pre><code>x = 5
+y = 5
+print(x is y)     # True
+print(x is not y) # False</code></pre>
+        <p><code>is</code> checks whether two variables point to the same memory location.</p>
+
+        <div class="quiz-section">
+            <h3>📝 Quiz Time!</h3>
+            <form id="quiz-form-operators">
+                <p><strong>Q1:</strong> What will be the output of 5 + 2 * 3?</p>
+                <input type="radio" id="q1a" name="q1" value="A">
+                <label for="q1a">A. 21</label><br>
+                <input type="radio" id="q1b" name="q1" value="B">
+                <label for="q1b">B. 11</label><br>
+                <input type="radio" id="q1c" name="q1" value="C">
+                <label for="q1c">C. 17</label><br>
+                <input type="radio" id="q1d" name="q1" value="D">
+                <label for="q1d">D. 13</label><br>
+
+                <p><strong>Q2:</strong> Which operator is used for exponentiation?</p>
+                <input type="radio" id="q2a" name="q2" value="A">
+                <label for="q2a">A. *</label><br>
+                <input type="radio" id="q2b" name="q2" value="B">
+                <label for="q2b">B. **</label><br>
+                <input type="radio" id="q2c" name="q2" value="C">
+                <label for="q2c">C. //</label><br>
+                <input type="radio" id="q2d" name="q2" value="D">
+                <label for="q2d">D. %%</label><br>
+
+                <p><strong>Q3:</strong> not (True and False) evaluates to:</p>
+                <input type="radio" id="q3a" name="q3" value="A">
+                <label for="q3a">A. True</label><br>
+                <input type="radio" id="q3b" name="q3" value="B">
+                <label for="q3b">B. False</label><br>
+
+                <p><strong>Q4:</strong> What will 10 % 3 return?</p>
+                <input type="radio" id="q4a" name="q4" value="A">
+                <label for="q4a">A. 1</label><br>
+                <input type="radio" id="q4b" name="q4" value="B">
+                <label for="q4b">B. 3</label><br>
+                <input type="radio" id="q4c" name="q4" value="C">
+                <label for="q4c">C. 0</label><br>
+                <input type="radio" id="q4d" name="q4" value="D">
+                <label for="q4d">D. 10</label><br>
+
+                <p><strong>Q5:</strong> Which operator checks if two variables refer to the same object?</p>
+                <input type="radio" id="q5a" name="q5" value="A">
+                <label for="q5a">A. ==</label><br>
+                <input type="radio" id="q5b" name="q5" value="B">
+                <label for="q5b">B. is</label><br>
+                <input type="radio" id="q5c" name="q5" value="C">
+                <label for="q5c">C. in</label><br>
+                <input type="radio" id="q5d" name="q5" value="D">
+                <label for="q5d">D. !=</label><br>
+
+                <p><strong>Q6:</strong> 7 // 3 gives:</p>
+                <input type="radio" id="q6a" name="q6" value="A">
+                <label for="q6a">A. 2</label><br>
+                <input type="radio" id="q6b" name="q6" value="B">
+                <label for="q6b">B. 2.333</label><br>
+                <input type="radio" id="q6c" name="q6" value="C">
+                <label for="q6c">C. 2.0</label><br>
+                <input type="radio" id="q6d" name="q6" value="D">
+                <label for="q6d">D. 3</label><br>
+
+                <p><strong>Q7:</strong> Which one is a logical operator?</p>
+                <input type="radio" id="q7a" name="q7" value="A">
+                <label for="q7a">A. +</label><br>
+                <input type="radio" id="q7b" name="q7" value="B">
+                <label for="q7b">B. and</label><br>
+                <input type="radio" id="q7c" name="q7" value="C">
+                <label for="q7c">C. is</label><br>
+                <input type="radio" id="q7d" name="q7" value="D">
+                <label for="q7d">D. in</label><br>
+
+                <p><strong>Q8:</strong> Expression 4 >= 5 returns:</p>
+                <input type="radio" id="q8a" name="q8" value="A">
+                <label for="q8a">A. True</label><br>
+                <input type="radio" id="q8b" name="q8" value="B">
+                <label for="q8b">B. False</label><br>
+
+                <p><strong>Q9:</strong> Which of the following is a membership operator?</p>
+                <input type="radio" id="q9a" name="q9" value="A">
+                <label for="q9a">A. is</label><br>
+                <input type="radio" id="q9b" name="q9" value="B">
+                <label for="q9b">B. and</label><br>
+                <input type="radio" id="q9c" name="q9" value="C">
+                <label for="q9c">C. in</label><br>
+                <input type="radio" id="q9d" name="q9" value="D">
+                <label for="q9d">D. not</label><br>
+
+                <p><strong>Q10:</strong> What will be the value of x after this code?</p>
+                <pre><code>x = 3
+x *= 2</code></pre>
+                <input type="radio" id="q10a" name="q10" value="A">
+                <label for="q10a">A. 3</label><br>
+                <input type="radio" id="q10b" name="q10" value="B">
+                <label for="q10b">B. 5</label><br>
+                <input type="radio" id="q10c" name="q10" value="C">
+                <label for="q10c">C. 6</label><br>
+                <input type="radio" id="q10d" name="q10" value="D">
+                <label for="q10d">D. 9</label><br>
+
+                <button type="submit" class="submit-btn">Submit Quiz</button>
+            </form>
+        </div>
+        <h2 style="text-align: center; margin-top: 20px;">Python Inputs and Outputs</h2>
+        <h3>1. Input in Python</h3>
+        <p>Python allows you to take input from the user using the <code>input()</code> function.</p>
+        <pre><code>name = input("Enter your name: ")
+print("Hello", name)</code></pre>
+        <p><strong>🔹 Key Points:</strong></p>
+        <ul>
+            <li><code>input()</code> always returns a string.</li>
+            <li>You can convert the input to other types like <code>int</code>, <code>float</code>, etc.:</li>
+        </ul>
+        <pre><code>age = int(input("Enter your age: "))  # Converts the string to integer</code></pre>
+
+        <h3>2. Output in Python</h3>
+        <p>Python uses the <code>print()</code> function to display output to the screen.</p>
+        <pre><code>print("Welcome to Python!")</code></pre>
+        <p><strong>🔹 Printing Multiple Values:</strong></p>
+        <pre><code>a = 5
+b = 10
+print("Sum is", a + b)  # Output: Sum is 15</code></pre>
+        <p><strong>🔹 Formatted Output (f-strings – Python 3.6+):</strong></p>
+        <pre><code>name = "Shaurya"
+age = 18
+print(f"My name is {name} and I am {age} years old.")</code></pre>
+        <p><strong>🔹 sep and end Parameters:</strong></p>
+        <ul>
+            <li><code>sep</code>: separates multiple values (default is space)</li>
+            <li><code>end</code>: specifies what to print at the end (default is newline <code>\n</code>)</li>
+        </ul>
+        <pre><code>print("Hello", "World", sep="-", end="!!\n")  # Output: Hello-World!!</code></pre>
+
+        <h3>3. Reading Multiple Inputs</h3>
+        <p><strong>From the same line:</strong></p>
+        <pre><code>x, y = input("Enter two numbers: ").split()
+print(x, y)</code></pre>
+        <p>You can also convert them:</p>
+        <pre><code>x, y = map(int, input("Enter two numbers: ").split())</code></pre>
+        <p><strong>Example Program:</strong></p>
+        <pre><code>name = input("What is your name? ")
+marks = float(input("Enter your marks: "))
+print(f"{name} scored {marks} marks in the exam.")</code></pre>
+        <div class="quiz-section">
+            <h3>📝 Quiz Time!</h3>
+            <form id="quiz-form-input-output">
+                <p><strong>Q1:</strong> What is the default return type of the input() function?</p>
+                <input type="radio" id="q1a" name="q1" value="A">
+                <label for="q1a">A. int</label><br>
+                <input type="radio" id="q1b" name="q1" value="B">
+                <label for="q1b">B. str</label><br>
+                <input type="radio" id="q1c" name="q1" value="C">
+                <label for="q1c">C. float</label><br>
+                <input type="radio" id="q1d" name="q1" value="D">
+                <label for="q1d">D. bool</label><br>
+
+                <p><strong>Q2:</strong> What will be the output of print("Hello", "World", sep="-")?</p>
+                <input type="radio" id="q2a" name="q2" value="A">
+                <label for="q2a">A. Hello World</label><br>
+                <input type="radio" id="q2b" name="q2" value="B">
+                <label for="q2b">B. HelloWorld</label><br>
+                <input type="radio" id="q2c" name="q2" value="C">
+                <label for="q2c">C. Hello-World</label><br>
+                <input type="radio" id="q2d" name="q2" value="D">
+                <label for="q2d">D. Hello,World</label><br>
+
+                <p><strong>Q3:</strong> Which function is used to display output in Python?</p>
+                <input type="radio" id="q3a" name="q3" value="A">
+                <label for="q3a">A. display()</label><br>
+                <input type="radio" id="q3b" name="q3" value="B">
+                <label for="q3b">B. echo()</label><br>
+                <input type="radio" id="q3c" name="q3" value="C">
+                <label for="q3c">C. print()</label><br>
+                <input type="radio" id="q3d" name="q3" value="D">
+                <label for="q3d">D. output()</label><br>
+
+                <p><strong>Q4:</strong> What will print("Python", end="123") do?</p>
+                <input type="radio" id="q4a" name="q4" value="A">
+                <label for="q4a">A. Print Python and then go to a new line</label><br>
+                <input type="radio" id="q4b" name="q4" value="B">
+                <label for="q4b">B. Print Python123</label><br>
+                <input type="radio" id="q4c" name="q4" value="C">
+                <label for="q4c">C. Throw an error</label><br>
+                <input type="radio" id="q4d" name="q4" value="D">
+                <label for="q4d">D. Print 123Python</label><br>
+
+                <p><strong>Q5:</strong> Which of the following is used to take integer input in Python?</p>
+                <input type="radio" id="q5a" name="q5" value="A">
+                <label for="q5a">A. input(int)</label><br>
+                <input type="radio" id="q5b" name="q5" value="B">
+                <label for="q5b">B. int(input())</label><br>
+                <input type="radio" id="q5c" name="q5" value="C">
+                <label for="q5c">C. int.input()</label><br>
+                <input type="radio" id="q5d" name="q5" value="D">
+                <label for="q5d">D. input.int()</label><br>
+
+                <p><strong>Q6:</strong> What does the split() function do with input?</p>
+                <input type="radio" id="q6a" name="q6" value="A">
+                <label for="q6a">A. Splits input into characters</label><br>
+                <input type="radio" id="q6b" name="q6" value="B">
+                <label for="q6b">B. Splits input into words</label><br>
+                <input type="radio" id="q6c" name="q6" value="C">
+                <label for="q6c">C. Splits input into integers</label><br>
+                <input type="radio" id="q6d" name="q6" value="D">
+                <label for="q6d">D. Splits input into lines</label><br>
+
+                <p><strong>Q7:</strong> Which of the following will correctly read two integers in one line?</p>
+                <input type="radio" id="q7a" name="q7" value="A">
+                <label for="q7a">A. x = int(input(), int(input()))</label><br>
+                <input type="radio" id="q7b" name="q7" value="B">
+                <label for="q7b">B. x, y = input().split()</label><br>
+                <input type="radio" id="q7c" name="q7" value="C">
+                <label for="q7c">C. x, y = map(int, input().split())</label><br>
+                <input type="radio" id="q7d" name="q7" value="D">
+                <label for="q7d">D. x, y = int(input().split())</label><br>
+
+                <p><strong>Q8:</strong> What will print(f"2 + 3 = {2 + 3}") display?</p>
+                <input type="radio" id="q8a" name="q8" value="A">
+                <label for="q8a">A. 2 + 3 = {2 + 3}</label><br>
+                <input type="radio" id="q8b" name="q8" value="B">
+                <label for="q8b">B. 2 + 3 = 5</label><br>
+                <input type="radio" id="q8c" name="q8" value="C">
+                <label for="q8c">C. f"2 + 3 = {5}"</label><br>
+                <input type="radio" id="q8d" name="q8" value="D">
+                <label for="q8d">D. Error</label><br>
+
+                <p><strong>Q9:</strong> What is the output of print("a", "b", "c", sep="*")?</p>
+                <input type="radio" id="q9a" name="q9" value="A">
+                <label for="q9a">A. abc</label><br>
+                <input type="radio" id="q9b" name="q9" value="B">
+                <label for="q9b">B. abc</label><br>
+                <input type="radio" id="q9c" name="q9" value="C">
+                <label for="q9c">C. a b c</label><br>
+                <input type="radio" id="q9d" name="q9" value="D">
+                <label for="q9d">D. a-b-c</label><br>
+
+                <p><strong>Q10:</strong> If a user enters 25 and you write input() + 5, what will happen?</p>
+                <input type="radio" id="q10a" name="q10" value="A">
+                <label for="q10a">A. It will print 30</label><br>
+                <input type="radio" id="q10b" name="q10" value="B">
+                <label for="q10b">B. It will give a TypeError</label><br>
+                <input type="radio" id="q10c" name="q10" value="C">
+                <label for="q10c">C. It will print 255</label><br>
+                <input type="radio" id="q10d" name="q10" value="D">
+                <label for="q10d">D. It will convert to float</label><br>
+
+                <button type="submit" class="submit-btn">Submit Quiz</button>
+            </form>
+        </div>
+        <h2 style="text-align: center; margin-top: 20px;">Comments and Documentation</h2>
+        <h3>1. What Are Comments?</h3>
+        <p>Comments are lines in the code that are ignored by the Python interpreter. They are used to explain the code, make it readable, and help future developers (including yourself) understand what the code does.</p>
+        <p><strong>✅ Single-Line Comment</strong></p>
+        <p>Use <code>#</code> for single-line comments:</p>
+        <pre><code># This is a single-line comment
+print("Hello")  # This prints Hello</code></pre>
+
+        <h3>2. Multi-Line Comments (Documentation Strings)</h3>
+        <p>You can use triple quotes (<code>'''</code> or <code>"""</code>) to write multi-line comments or docstrings.</p>
+        <pre><code>"""
+This is a multi-line comment
+spanning multiple lines.
+"""</code></pre>
+        <p>However, in Python, triple quotes are mainly used for docstrings, not for general comments.</p>
+
+        <h3>3. Docstrings (Documentation Strings)</h3>
+        <p>Docstrings are special multi-line strings used to describe functions, classes, or modules. They appear immediately after the <code>def</code> or <code>class</code> line.</p>
+        <pre><code>def add(a, b):
+    """
+    This function adds two numbers.
+    Parameters: a, b
+    Returns: sum of a and b
+    """
+    return a + b</code></pre>
+
+        <h3>🧪 Accessing Docstrings:</h3>
+        <p>You can access them using the <code>.__doc__</code> attribute:</p>
+        <pre><code>print(add.__doc__)</code></pre>
+
+        <h3>✅ Best Practices</h3>
+        <ul>
+            <li>Use comments to explain why something is done, not what (which should be clear from the code).</li>
+            <li>Use docstrings to describe the purpose, parameters, and return values of functions and classes.</li>
+        </ul>
+
+        <div class="quiz-section">
+            <h3>📝 Quiz Time!</h3>
+            <form id="quiz-form-comments-docs">
+                <p><strong>Q1:</strong> Which symbol is used for single-line comments in Python?</p>
+                <input type="radio" id="q1a" name="q1" value="A">
+                <label for="q1a">A. //</label><br>
+                <input type="radio" id="q1b" name="q1" value="B">
+                <label for="q1b">B. /* */</label><br>
+                <input type="radio" id="q1c" name="q1" value="C">
+                <label for="q1c">C. #</label><br>
+                <input type="radio" id="q1d" name="q1" value="D">
+                <label for="q1d">D. &lt;!-- --&gt;</label><br>
+
+                <p><strong>Q2:</strong> How do you write multi-line comments in Python?</p>
+                <input type="radio" id="q2a" name="q2" value="A">
+                <label for="q2a">A. /* comment */</label><br>
+                <input type="radio" id="q2b" name="q2" value="B">
+                <label for="q2b">B. // comment</label><br>
+                <input type="radio" id="q2c" name="q2" value="C">
+                <label for="q2c">C. # comment</label><br>
+                <input type="radio" id="q2d" name="q2" value="D">
+                <label for="q2d">D. """ comment """</label><br>
+
+                <p><strong>Q3:</strong> What is a docstring?</p>
+                <input type="radio" id="q3a" name="q3" value="A">
+                <label for="q3a">A. A type of input</label><br>
+                <input type="radio" id="q3b" name="q3" value="B">
+                <label for="q3b">B. A block of code</label><br>
+                <input type="radio" id="q3c" name="q3" value="C">
+                <label for="q3c">C. A documentation string for functions/classes/modules</label><br>
+                <input type="radio" id="q3d" name="q3" value="D">
+                <label for="q3d">D. A string printed on the screen</label><br>
+
+                <p><strong>Q4:</strong> Where should a docstring be placed in a function?</p>
+                <input type="radio" id="q4a" name="q4" value="A">
+                <label for="q4a">A. Before the function</label><br>
+                <input type="radio" id="q4b" name="q4" value="B">
+                <label for="q4b">B. Inside the function after return</label><br>
+                <input type="radio" id="q4c" name="q4" value="C">
+                <label for="q4c">C. Immediately after the function definition line</label><br>
+                <input type="radio" id="q4d" name="q4" value="D">
+                <label for="q4d">D. At the end of the script</label><br>
+
+                <p><strong>Q5:</strong> Which of the following is true about comments?</p>
+                <input type="radio" id="q5a" name="q5" value="A">
+                <label for="q5a">A. They increase the size of the code</label><br>
+                <input type="radio" id="q5b" name="q5" value="B">
+                <label for="q5b">B. They are executed by Python</label><br>
+                <input type="radio" id="q5c" name="q5" value="C">
+                <label for="q5c">C. They make the code harder to understand</label><br>
+                <input type="radio" id="q5d" name="q5" value="D">
+                <label for="q5d">D. They are ignored by the interpreter</label><br>
+
+                <p><strong>Q6:</strong> How do you access a function’s docstring?</p>
+                <input type="radio" id="q6a" name="q6" value="A">
+                <label for="q6a">A. using docstring()</label><br>
+                <input type="radio" id="q6b" name="q6" value="B">
+                <label for="q6b">B. using print(doc())</label><br>
+                <input type="radio" id="q6c" name="q6" value="C">
+                <label for="q6c">C. using function.__doc__</label><br>
+                <input type="radio" id="q6d" name="q6" value="D">
+                <label for="q6d">D. using get_doc()</label><br>
+
+                <p><strong>Q7:</strong> What will happen if you don’t use a docstring?</p>
+                <input type="radio" id="q7a" name="q7" value="A">
+                <label for="q7a">A. The function will not run</label><br>
+                <input type="radio" id="q7b" name="q7" value="B">
+                <label for="q7b">B. You’ll get an error</label><br>
+                <input type="radio" id="q7c" name="q7" value="C">
+                <label for="q7c">C. Nothing; it's optional</label><br>
+                <input type="radio" id="q7d" name="q7" value="D">
+                <label for="q7d">D. Python will crash</label><br>
+
+                <p><strong>Q8:</strong> What is the output of this code?</p>
+                <pre><code>def test():
+    """This is a test function"""
+    return 5
+
+print(test.__doc__)</code></pre>
+                <input type="radio" id="q8a" name="q8" value="A">
+                <label for="q8a">A. test</label><br>
+                <input type="radio" id="q8b" name="q8" value="B">
+                <label for="q8b">B. 5</label><br>
+                <input type="radio" id="q8c" name="q8" value="C">
+                <label for="q8c">C. None</label><br>
+                <input type="radio" id="q8d" name="q8" value="D">
+                <label for="q8d">D. This is a test function</label><br>
+
+                <p><strong>Q9:</strong> Which quotes are valid for writing docstrings?</p>
+                <input type="radio" id="q9a" name="q9" value="A">
+                <label for="q9a">A. Single quotes (' ')</label><br>
+                <input type="radio" id="q9b" name="q9" value="B">
+                <label for="q9b">B. Triple double-quotes (""" """)</label><br>
+                <input type="radio" id="q9c" name="q9" value="C">
+                <label for="q9c">C. Triple single-quotes (''' ''')</label><br>
+                <input type="radio" id="q9d" name="q9" value="D">
+                <label for="q9d">D. Both B and C</label><br>
+
+                <p><strong>Q10:</strong> Why are comments important in code?</p>
+                <input type="radio" id="q10a" name="q10" value="A">
+                <label for="q10a">A. They slow down the program</label><br>
+                <input type="radio" id="q10b" name="q10" value="B">
+                <label for="q10b">B. They are required to run the code</label><br>
+                <input type="radio" id="q10c" name="q10" value="C">
+                <label for="q10c">C. They help explain and document code</label><br>
+                <input type="radio" id="q10d" name="q10" value="D">
+                <label for="q10d">D. They make code longer</label><br>
+
+                <button type="submit" class="submit-btn">Submit Quiz</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const quizForm = document.getElementById("quiz-form");
+            const submitButton = document.querySelector(".submit-btn");
+
+            submitButton.addEventListener("click", function(event) {
+                event.preventDefault();
+                const formData = new FormData(quizForm);
+                let score = 0;
+
+                // Example answers for the quiz
+                const answers = {
+                    q1: "B",
+                    q2: "C",
+                    q3: "A",
+                    q4: "A",
+                    q5: "B",
+                    q6: "A",
+                    q7: "B",
+                    q8: "B",
+                    q9: "C",
+                    q10: "C"
+                };
+
+                for (let [key, value] of formData.entries()) {
+                    if (answers[key] === value) {
+                        score++;
+                    }
+                }
+
+                alert(`Your score is ${score}/${Object.keys(answers).length}`);
+            });
+
+            const operatorsQuizForm = document.getElementById("quiz-form-operators");
+            const submitButtonOperators = operatorsQuizForm.querySelector(".submit-btn");
+
+            submitButtonOperators.addEventListener("click", function(event) {
+                event.preventDefault();
+                const formData = new FormData(operatorsQuizForm);
+                let score = 0;
+
+                // Example answers for the Operators and Expressions quiz
+                const answersOperators = {
+                    q1: "B",
+                    q2: "B",
+                    q3: "A",
+                    q4: "A",
+                    q5: "B",
+                    q6: "A",
+                    q7: "B",
+                    q8: "B",
+                    q9: "C",
+                    q10: "C"
+                };
+
+                for (let [key, value] of formData.entries()) {
+                    if (answersOperators[key] === value) {
+                        score++;
+                    }
+                }
+
+                alert(`Your score is ${score}/${Object.keys(answersOperators).length}`);
+            });
+
+            const inputOutputQuizForm = document.getElementById("quiz-form-input-output");
+            const submitButtonInputOutput = inputOutputQuizForm.querySelector(".submit-btn");
+
+            submitButtonInputOutput.addEventListener("click", function(event) {
+                event.preventDefault();
+                const formData = new FormData(inputOutputQuizForm);
+                let score = 0;
+
+                // Example answers for the Python Inputs and Outputs quiz
+                const answersInputOutput = {
+                    q1: "B",
+                    q2: "C",
+                    q3: "C",
+                    q4: "B",
+                    q5: "B",
+                    q6: "B",
+                    q7: "C",
+                    q8: "B",
+                    q9: "D",
+                    q10: "B"
+                };
+
+                for (let [key, value] of formData.entries()) {
+                    if (answersInputOutput[key] === value) {
+                        score++;
+                    }
+                }
+
+                alert(`Your score is ${score}/${Object.keys(answersInputOutput).length}`);
+            });
+
+            const commentsDocsQuizForm = document.getElementById("quiz-form-comments-docs");
+            const submitButtonCommentsDocs = commentsDocsQuizForm.querySelector(".submit-btn");
+
+            submitButtonCommentsDocs.addEventListener("click", function(event) {
+                event.preventDefault();
+                const formData = new FormData(commentsDocsQuizForm);
+                let score = 0;
+
+                // Example answers for the Comments and Documentation quiz
+                const answersCommentsDocs = {
+                    q1: "C",
+                    q2: "D",
+                    q3: "C",
+                    q4: "C",
+                    q5: "D",
+                    q6: "C",
+                    q7: "C",
+                    q8: "D",
+                    q9: "D",
+                    q10: "C"
+                };
+
+                for (let [key, value] of formData.entries()) {
+                    if (answersCommentsDocs[key] === value) {
+                        score++;
+                    }
+                }
+
+                alert(`Your score is ${score}/${Object.keys(answersCommentsDocs).length}`);
+            });
+        });
+    </script>
+</body>
+</html>
